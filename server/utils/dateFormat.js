@@ -40,4 +40,5 @@ const addDateSuffix = (date) => {
     ? addDateSuffix(dateObj.getDate())
     : dateObj.getDate();
 
+  const year = dateObj.getFullYear();
 };
