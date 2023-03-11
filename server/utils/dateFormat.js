@@ -33,4 +33,5 @@ const addDateSuffix = (date) => {
     11: monthLength === 'short' ? 'Dec' : 'December',
   };
 
+  const dateObj = new Date(timestamp);
 };
