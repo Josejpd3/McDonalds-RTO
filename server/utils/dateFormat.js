@@ -46,4 +46,9 @@ const addDateSuffix = (date) => {
       ? Math.floor(dateObj.getHours() - 12)
       : dateObj.getHours();
 
+  // if hour is 0 (12:00am), change it to 12
+  if (hour === 0) {
+    hour = 12;
+  }
+
 };
