@@ -19,5 +19,10 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  role: {
+    type: String,
+    required: true,
+    default: "crew"
+  },
 
 });
