@@ -24,5 +24,11 @@ const userSchema = new Schema({
     required: true,
     default: "crew"
   },
+  requests: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Request',
+    },
+  ],
 
 });
