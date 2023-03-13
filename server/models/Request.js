@@ -14,5 +14,10 @@ const requestSchema = new Schema({
     required: true,
     trim: true,
   },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+    get: (timestamp) => dateFormat(timestamp),
+  },
 
 });
