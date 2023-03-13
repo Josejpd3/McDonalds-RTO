@@ -19,5 +19,9 @@ const requestSchema = new Schema({
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   },
+  requestStatus: {
+    type: String,
+    default: "pending"
+  },
 
 });
