@@ -42,5 +42,7 @@ const requestSchema = new Schema({
       },
     },
   ],
-
 });
+
+const Request = model('Request', requestSchema);
+
