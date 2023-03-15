@@ -39,4 +39,7 @@ const typeDefs = gql`
     me: User
   }
 
+  type Mutation {
+
+  }
 `;
