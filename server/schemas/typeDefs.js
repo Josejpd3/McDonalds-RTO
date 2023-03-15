@@ -43,5 +43,6 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!, role: String!): Auth
     login(email: String!, password: String!): Auth
     addRequest(requestText: String!): Request
+    updateRequestStatus(_id: ID!, requestStatus: String!): Request
   }
 `;
