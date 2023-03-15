@@ -10,5 +10,14 @@ const typeDefs = gql`
     requests: [Request]!
   }
 
+  type Request {
+    _id: ID
+    requestText: String
+    requestAuthor: String
+    createdAt: String
+    requestStatus: String
+    comments: [Comment]!
+  }
+
 
 `;
