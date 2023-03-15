@@ -45,5 +45,6 @@ const typeDefs = gql`
     addRequest(requestText: String!): Request
     updateRequestStatus(_id: ID!, requestStatus: String!): Request
     addComment(requestId: ID!, commentText: String!): Request
+    removeRequest(requestId: ID!): Request
   }
 `;
