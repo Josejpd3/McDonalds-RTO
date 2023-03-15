@@ -44,5 +44,6 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
     addRequest(requestText: String!): Request
     updateRequestStatus(_id: ID!, requestStatus: String!): Request
+    addComment(requestId: ID!, commentText: String!): Request
   }
 `;
