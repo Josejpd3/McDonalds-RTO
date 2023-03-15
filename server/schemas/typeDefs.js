@@ -31,5 +31,12 @@ const typeDefs = gql`
     user: User
   }
 
+  type Query {
+    users: [User]
+    user(username: String!): User
+    requests(username: String): [Request]
+    request(requestId: ID!): Request
+    me: User
+  }
 
 `;
