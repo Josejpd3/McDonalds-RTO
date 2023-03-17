@@ -14,6 +14,9 @@ const resolvers = {
       const params = username ? { username } : {};
       return Request.find(params).sort({ createdAt: -1 });
     },
+    request: async (parent, { requestId }) => {
+      return Request.findOne({ _id: requestId });
+    },
 
   },
 
