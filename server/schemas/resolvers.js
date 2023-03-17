@@ -10,6 +10,10 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate('requests');
     },
+    requests: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Request.find(params).sort({ createdAt: -1 });
+    },
 
   },
 
