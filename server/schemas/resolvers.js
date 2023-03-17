@@ -17,6 +17,12 @@ const resolvers = {
     request: async (parent, { requestId }) => {
       return Request.findOne({ _id: requestId });
     },
+    me: async (parent, args, context) => {
+      if (context.user) {
+        return User.findOne({ _id: context.user._id }).populate('requests');
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
 
   },
 
