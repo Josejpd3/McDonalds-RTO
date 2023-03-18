@@ -92,6 +92,22 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    removeRequest: async (parent, { requestId }, context) => {
+      if (context.user) {
+        const request = await Request.findOneAndDelete({
+          _id: requestId,
+          requestAuthor: context.user.username,
+        });
+
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $pull: { requests: request._id } }
+        );
+
+        return request;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
   },
 };
 
