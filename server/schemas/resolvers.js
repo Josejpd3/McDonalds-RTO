@@ -64,6 +64,17 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    updateRequestStatus: async (parent, { _id, requestStatus }, context) => {
+      if(context.user) {
+        return Request.findOneAndUpdate(
+          { _id: _id },
+          {
+            $set: { requestStatus: requestStatus}
+          }
+        )
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
   },
 };
 
