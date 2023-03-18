@@ -48,7 +48,22 @@ const resolvers = {
 
       return { token, user };
     },
+    addRequest: async (parent, { requestText, requestStatus }, context) => {
+      if (context.user) {
+        const request = await Request.create({
+          requestText,
+          requestAuthor: context.user.username,
+        });
 
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { requests: request._id } }
+        );
+
+        return request;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
   },
 };
 
