@@ -75,6 +75,23 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    addComment: async (parent, { requestId, commentText }, context) => {
+      if (context.user) {
+        return Request.findOneAndUpdate(
+          { _id: requestId },
+          {
+            $addToSet: {
+              comments: { commentText, commentAuthor: context.user.username },
+            },
+          },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
   },
 };
 
