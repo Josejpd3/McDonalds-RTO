@@ -108,6 +108,23 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    removeComment: async (parent, { requestId, commentId }, context) => {
+      if (context.user) {
+        return Request.findOneAndUpdate(
+          { _id: requestId },
+          {
+            $pull: {
+              comments: {
+                _id: commentId,
+                commentAuthor: context.user.username,
+              },
+            },
+          },
+          { new: true }
+        );
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
   },
 };
 
