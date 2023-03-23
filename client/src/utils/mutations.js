@@ -24,3 +24,19 @@ export const ADD_USER = gql`
   }
 `;
 
+export const ADD_REQUEST = gql`
+  mutation addRequest($requestText: String!) {
+    addRequest(requestText: $requestText) {
+      _id
+      requestText
+      requestAuthor
+      createdAt
+      requestStatus
+      comments {
+        _id
+        commentText
+      }
+    }
+  }
+`;
+
