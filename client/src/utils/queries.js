@@ -29,3 +29,21 @@ export const QUERY_REQUESTS = gql`
   }
 `;
 
+export const QUERY_SINGLE_REQUEST = gql`
+  query getSingleRequest($requestId: ID!) {
+    request(requestId: $requestId) {
+      _id
+      requestText
+      requestAuthor
+      createdAt
+      requestStatus
+      comments {
+        _id
+        commentText
+        commentAuthor
+        createdAt
+      }
+    }
+  }
+`;
+
