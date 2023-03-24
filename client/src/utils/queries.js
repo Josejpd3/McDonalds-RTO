@@ -47,3 +47,20 @@ export const QUERY_SINGLE_REQUEST = gql`
   }
 `;
 
+export const QUERY_ME = gql`
+  query me {
+    me {
+      _id
+      username
+      email
+      role
+      requests {
+        _id
+        requestText
+        requestAuthor
+        createdAt
+        requestStatus
+      }
+    }
+  }
+`;
