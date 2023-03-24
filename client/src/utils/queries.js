@@ -17,3 +17,15 @@ export const QUERY_USER = gql`
   }
 `;
 
+export const QUERY_REQUESTS = gql`
+  query getRequests {
+    thoughts {
+      _id
+      requestText
+      requestAuthor
+      createdAt
+      requestStatus
+    }
+  }
+`;
+
