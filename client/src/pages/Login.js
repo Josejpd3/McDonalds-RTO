@@ -8,3 +8,5 @@ import Auth from '../utils/auth';
 const Login = (props) => {
 
 };
+
+export default Login;
