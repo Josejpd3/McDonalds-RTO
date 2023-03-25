@@ -19,7 +19,7 @@ export const QUERY_USER = gql`
 
 export const QUERY_REQUESTS = gql`
   query getRequests {
-    thoughts {
+    requests {
       _id
       requestText
       requestAuthor
