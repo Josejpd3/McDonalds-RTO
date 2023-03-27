@@ -45,7 +45,9 @@ const Login = (props) => {
       <div className='card-container'>
         <div className="card">
           <h4>Login</h4>
+          <div className="card-body">
 
+          </div>
         </div>
       </div>
     </main>
