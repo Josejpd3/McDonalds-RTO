@@ -40,7 +40,9 @@ function App() {
       <Router>
         <div>
           <div className="container">
+            <Routes>
 
+            </Routes>
           </div>
         </div>
       </Router>
