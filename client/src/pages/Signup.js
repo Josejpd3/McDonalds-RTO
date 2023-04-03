@@ -84,6 +84,13 @@ const Signup = () => {
                   Submit
                 </button>
               </form>
+            )}
+
+            {error && (
+              <div className="error-message">
+                {error.message}
+              </div>
+            )}
           </div>
         </div>
       </div>
