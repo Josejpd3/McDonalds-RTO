@@ -15,7 +15,15 @@ const Home = () => {
     <main>
       <div className="main">
         <div className="requestContainer">
-
+          {loading ? (
+            <div>Loading...</div>
+          ) : (
+            <RequestList
+              requests={requests}
+              title="Request List"
+            />
+            
+          )}
         </div>
       </div>
     </main>
