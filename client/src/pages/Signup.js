@@ -24,4 +24,6 @@ const Signup = () => {
     });
   };
 
+  const handleFormSubmit = async (event) => {
 
+  };
