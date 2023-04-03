@@ -41,7 +41,9 @@ const Signup = () => {
 
   return (
     <main>
+      <div className="container">
 
+      </div>
     </main>
   );
 };
