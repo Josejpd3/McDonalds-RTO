@@ -8,4 +8,7 @@ import { QUERY_REQUESTS } from '../utils/queries';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_REQUESTS);
+  const requests = data?.requests || [];
+
+
 };
