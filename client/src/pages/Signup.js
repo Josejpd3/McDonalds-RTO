@@ -43,6 +43,7 @@ const Signup = () => {
     <main>
       <div className="container">
         <div className="card">
+          <h4 className="card-header">Sign Up</h4>
 
         </div>
       </div>
