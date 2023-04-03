@@ -70,7 +70,13 @@ const Signup = () => {
                   value={formState.password}
                   onChange={handleChange}
                 />
-
+                <button
+                  className="submitButton"
+                  style={{ cursor: 'pointer' }}
+                  type="submit"
+                >
+                  Submit
+                </button>
               </form>
           </div>
         </div>
