@@ -13,7 +13,9 @@ const Home = () => {
 
   return (
     <main>
+      <div className="main">
 
+      </div>
     </main>
   );
 };
