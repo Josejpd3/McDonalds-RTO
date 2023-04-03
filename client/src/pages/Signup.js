@@ -42,7 +42,9 @@ const Signup = () => {
   return (
     <main>
       <div className="container">
+        <div className="card">
 
+        </div>
       </div>
     </main>
   );
