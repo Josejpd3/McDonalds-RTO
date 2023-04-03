@@ -45,7 +45,9 @@ const Signup = () => {
         <div className="card">
           <h4 className="card-header">Sign Up</h4>
           <div className="card-body">
+              <form onSubmit={handleFormSubmit}>
 
+              </form>
           </div>
         </div>
       </div>
