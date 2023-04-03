@@ -13,6 +13,8 @@ const Signup = () => {
     password: '',
     role: 'crew',
   });
+  const [addUser, { error, data }] = useMutation(ADD_USER);
+
 
 };
 
