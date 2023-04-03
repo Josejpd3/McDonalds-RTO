@@ -39,4 +39,9 @@ const Signup = () => {
     }
   };
 
-  };
+  return (
+    <main>
+
+    </main>
+  );
+};
