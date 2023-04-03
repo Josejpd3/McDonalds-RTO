@@ -44,7 +44,9 @@ const Signup = () => {
       <div className="container">
         <div className="card">
           <h4 className="card-header">Sign Up</h4>
+          <div className="card-body">
 
+          </div>
         </div>
       </div>
     </main>
