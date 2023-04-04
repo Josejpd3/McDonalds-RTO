@@ -13,5 +13,7 @@ const SingleRequest = () => {
     variables: { requestId: requestId },
   });
 
+  const request = data?.request || {};
+
 };
 
