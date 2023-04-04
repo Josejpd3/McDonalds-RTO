@@ -22,6 +22,9 @@ const SingleRequest = () => {
     <div className="main">
       <h3>
         {request.requestAuthor} <br />
+        <span style={{ fontSize: '1rem' }}>
+          had this request on {request.createdAt}
+        </span>
       </h3>
 
     </div>
