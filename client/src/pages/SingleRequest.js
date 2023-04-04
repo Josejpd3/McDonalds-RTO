@@ -37,6 +37,7 @@ const SingleRequest = () => {
         >
           {request.requestText}
         </blockquote>
+      </div>
 
       </div>
 
@@ -44,3 +45,4 @@ const SingleRequest = () => {
   );
 };
 
+export default SingleRequest;
