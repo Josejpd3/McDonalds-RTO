@@ -8,5 +8,10 @@ import { QUERY_SINGLE_REQUEST } from '../utils/queries';
 const SingleRequest = () => {
   const { requestId } = useParams();
 
+  const { loading, data } = useQuery(QUERY_SINGLE_REQUEST, {
+    // pass URL parameter
+    variables: { requestId: requestId },
+  });
+
 };
 
