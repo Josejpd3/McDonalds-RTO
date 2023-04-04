@@ -21,7 +21,7 @@ const SingleRequest = () => {
   return (
     <div className="main">
       <h3>
-
+        {request.requestAuthor} <br />
       </h3>
 
     </div>
