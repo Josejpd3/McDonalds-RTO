@@ -15,5 +15,8 @@ const SingleRequest = () => {
 
   const request = data?.request || {};
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 };
 
