@@ -27,6 +27,16 @@ const SingleRequest = () => {
         </span>
       </h3>
       <div className="textContainer">
+        <blockquote
+          style={{
+            fontSize: '1.5rem',
+            fontStyle: 'italic',
+            border: '2px dotted #1a1a1a',
+            lineHeight: '1.5',
+          }}
+        >
+          {request.requestText}
+        </blockquote>
 
       </div>
 
