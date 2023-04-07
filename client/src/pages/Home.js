@@ -48,6 +48,7 @@ const Home = () => {
   if(user.role === 'manager') {
     return (
       <div>
+        <h1>Hello {user.role}</h1>
 
       </div>
     )
