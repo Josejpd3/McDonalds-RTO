@@ -12,7 +12,7 @@ const typeDefs = gql`
 
   type Request {
     _id: ID
-    requestText: String
+    startDate: String
     requestAuthor: String
     createdAt: String
     requestStatus: String
