@@ -48,10 +48,11 @@ const resolvers = {
 
       return { token, user };
     },
-    addRequest: async (parent, { requestText, requestStatus }, context) => {
+    addRequest: async ( parent, { startDate, endDate, requestStatus }, context) => {
       if (context.user) {
         const request = await Request.create({
-          requestText,
+          startDate,
+          endDate,
           requestAuthor: context.user.username,
         });
 
