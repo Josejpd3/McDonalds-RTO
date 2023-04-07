@@ -9,7 +9,8 @@ export const QUERY_USER = gql`
       role
       requests {
         _id
-        requestText
+        startDate
+        endDate
         requestStatus
         createdAt
       }
