@@ -22,10 +22,9 @@ const requestSchema = new Schema({
       const year = date.getFullYear().toString().slice(-2);
       return `${month}/${day}/${year}`;
     },
-    required: 'You need to leave a request!',
-    minlength: 1,
-    maxlength: 280,
-    trim: true,
+    default: function () {
+      return this.startDate ? new Date(this.startDate) : new Date();
+    },
   },
   requestAuthor: {
     type: String,
