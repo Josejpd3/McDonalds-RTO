@@ -50,6 +50,14 @@ const Home = () => {
       <div>
         <h1>Hello {user.role}</h1>
         <div className="listContainer">
+          {loadingAll ? (
+            <div>Loading...</div>
+          ) : (
+            <RequestList
+              requests={allRequests}
+              title="All Requests"
+            />
+          )}
 
         </div>
       </div>
