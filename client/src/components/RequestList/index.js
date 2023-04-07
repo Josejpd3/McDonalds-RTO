@@ -62,7 +62,7 @@ const RequestList = ({
                 Delete
               </button>
             <div className="card-body">
-              
+              <p>{request.startDate} - {request.endDate}</p>
             </div>
           </div>
         ))}
