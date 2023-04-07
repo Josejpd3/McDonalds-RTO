@@ -44,14 +44,13 @@ const Home = () => {
 
     );
   }
-            <div>Loading...</div>
-          ) : (
-            <RequestList
-              requests={requests}
-              title="Request List"
-            />
-            
-          )}
+
+  if(user.role === 'manager') {
+    return (
+      <div>
+
+      </div>
+    )
         </div>
       </div>
     </main>
