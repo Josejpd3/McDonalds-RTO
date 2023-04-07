@@ -31,6 +31,14 @@ const Home = () => {
     return <div>Loading...</div>;
   }
 
+  if (!user?.username) {
+    return (
+      <div>
+
+      </div>
+
+    );
+  }
             <div>Loading...</div>
           ) : (
             <RequestList
