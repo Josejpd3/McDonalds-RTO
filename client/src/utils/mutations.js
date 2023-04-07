@@ -25,10 +25,11 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_REQUEST = gql`
-  mutation addRequest($requestText: String!) {
-    addRequest(requestText: $requestText) {
+  mutation addRequest($startDate: String!, $endDate: String) {
+    addRequest(startDate: $startDate, endDate: $endDate) {
       _id
-      requestText
+      startDate
+      endDate
       requestAuthor
       createdAt
       requestStatus
