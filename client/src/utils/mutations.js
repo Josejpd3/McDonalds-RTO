@@ -56,3 +56,21 @@ export const ADD_COMMENT = gql`
     }
   }
 `;
+
+
+export const REMOVE_REQUEST = gql`
+  mutation removeRequest($requestId: ID!) {
+    removeRequest(requestId: $requestId) {
+      _id
+      startDate
+      endDate
+      requestAuthor
+      createdAt
+      requestStatus
+      comments {
+        _id
+        commentText
+      }
+    }
+  }
+`;
