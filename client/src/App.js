@@ -55,6 +55,10 @@ function App() {
                 path="/signup"
                 element={<Signup />}
               />
+              <Route 
+                path="/requests/:requestId"
+                element={<SingleRequest />}
+              />
             </Routes>
           </div>
         </div>
