@@ -12,5 +12,6 @@ const RequestList = ({
   showTitle = true,
   showUsername = true,
 }) => {
+  const [removeRequest] = useMutation(REMOVE_REQUEST);
 
 };
