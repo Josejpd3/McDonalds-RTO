@@ -6,7 +6,7 @@ import RequestList from '../components/RequestList';
 
 import { QUERY_REQUESTS, QUERY_USER, QUERY_ME, } from '../utils/queries';
 
-
+import Auth from '../utils/auth';
 
 
 const Home = () => {
