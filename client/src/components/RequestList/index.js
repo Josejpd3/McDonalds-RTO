@@ -30,7 +30,7 @@ const RequestList = ({
 
   return (
     <main>
-
+      {showTitle && <h3>{title}</h3>}
     </main>
   );
 };
