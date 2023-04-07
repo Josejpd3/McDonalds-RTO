@@ -74,3 +74,5 @@ const RequestList = ({
     </main>
   );
 };
+
+export default RequestList;
