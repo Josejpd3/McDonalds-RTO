@@ -35,7 +35,8 @@ export const QUERY_SINGLE_REQUEST = gql`
   query getSingleRequest($requestId: ID!) {
     request(requestId: $requestId) {
       _id
-      requestText
+      startDate
+      endDate
       requestAuthor
       createdAt
       requestStatus
