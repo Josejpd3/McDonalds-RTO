@@ -58,11 +58,36 @@ const Home = () => {
               title="All Requests"
             />
           )}
-
         </div>
       </div>
     )
+  } else {
+      return (
+    <main>
+      <div className="mainContainer">
+        <h2>
+          Welcome {user.username} profile.
+        </h2>
+
+        <div className='buttonContainer'>
+            <button>Create Request</button>
         </div>
+
+        <div className="listContainer">
+          <RequestList
+            requests={user.requests}
+            title={`${user.username}'s requests...`}
+            showTitle={false}
+            showUsername={false}
+          />
+        </div>
+        {!userParam && (
+          <div
+            className="divider"
+            style={{ border: '1px dotted #1a1a1a' }}
+          >
+          </div>
+        )}
       </div>
     </main>
   );
