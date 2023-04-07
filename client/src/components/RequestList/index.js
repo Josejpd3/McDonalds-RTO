@@ -22,4 +22,10 @@ const RequestList = ({
       console.error(error);
     }
   };
+
+
+  if (!requests) {
+    return <h3>No Requests Yet</h3>;
+  }
+
 };
