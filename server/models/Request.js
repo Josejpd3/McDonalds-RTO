@@ -38,7 +38,7 @@ const requestSchema = new Schema({
   },
   requestStatus: {
     type: String,
-    default: "pending"
+    default: "pending",
   },
   comments: [
     {
