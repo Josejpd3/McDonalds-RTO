@@ -64,6 +64,11 @@ const RequestList = ({
             <div className="card-body">
               <p>{request.startDate} - {request.endDate}</p>
             </div>
+            <Link
+              to={`/requests/${request._id}`}
+            >
+              View Request
+            </Link>
           </div>
         ))}
     </main>
