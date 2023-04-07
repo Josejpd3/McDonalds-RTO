@@ -14,4 +14,12 @@ const RequestList = ({
 }) => {
   const [removeRequest] = useMutation(REMOVE_REQUEST);
 
+  const handleDelete = async (requestId) => {
+    try {
+      await removeRequest({ variables: { requestId } });
+      window.location.reload();
+    } catch (error) {
+      console.error(error);
+    }
+  };
 };
