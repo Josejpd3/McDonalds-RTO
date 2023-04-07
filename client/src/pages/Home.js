@@ -19,6 +19,9 @@ const Home = () => {
   const { loadingAll, data: allData } = useQuery(QUERY_REQUESTS);
   const allRequests = allData?.requests || [];
 
+  const user = data?.me || data?.user || {};
+
+
             <div>Loading...</div>
           ) : (
             <RequestList
