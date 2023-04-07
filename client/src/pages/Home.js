@@ -4,7 +4,9 @@ import { useQuery } from '@apollo/client';
 
 import RequestList from '../components/RequestList';
 
-import { QUERY_REQUESTS } from '../utils/queries';
+import { QUERY_REQUESTS, QUERY_USER, QUERY_ME, } from '../utils/queries';
+
+
 
 
 const Home = () => {
