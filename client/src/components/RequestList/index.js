@@ -55,6 +55,9 @@ const RequestList = ({
             </h4>
               <button
                 className="deleteBtn"
+                onClick={() => {
+                  handleDelete(request._id);
+                }}
               >
                 Delete
               </button>
