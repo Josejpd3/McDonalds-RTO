@@ -16,11 +16,9 @@ const Home = () => {
     variables: { username: userParam },
   });
 
-  return (
-    <main>
-      <div className="main">
-        <div className="requestContainer">
-          {loading ? (
+  const { loadingAll, data: allData } = useQuery(QUERY_REQUESTS);
+  const allRequests = allData?.requests || [];
+
             <div>Loading...</div>
           ) : (
             <RequestList
