@@ -10,8 +10,7 @@ import Auth from '../utils/auth';
 
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_REQUESTS);
-  const requests = data?.requests || [];
+  const { username: userParam } = useParams();
 
 
   return (
