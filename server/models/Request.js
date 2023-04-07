@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const requestSchema = new Schema({
-  requestText: {
+  startDate: {
     type: Date,
     get: function(timestamp) {
       const date = new Date(timestamp);
