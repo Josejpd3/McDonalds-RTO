@@ -31,6 +31,12 @@ const RequestList = ({
   return (
     <main>
       {showTitle && <h3>{title}</h3>}
+      {requests &&
+        requests.map((request) => (
+          <div key={request._id} className="card mb-3">
+
+          </div>
+        ))}
     </main>
   );
 };
