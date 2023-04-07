@@ -70,9 +70,9 @@ const resolvers = {
         return Request.findOneAndUpdate(
           { _id: _id },
           {
-            $set: { requestStatus: requestStatus}
+            $set: { requestStatus: requestStatus },
           }
-        )
+        );
       }
       throw new AuthenticationError('You need to be logged in!');
     },
