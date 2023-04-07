@@ -6,6 +6,7 @@ import { useQuery } from '@apollo/client';
 import { QUERY_SINGLE_REQUEST } from '../utils/queries';
 
 const SingleRequest = () => {
+  // Use `useParams()` to retrieve value of the route parameter `:requestId`
   const { requestId } = useParams();
 
   const { loading, data } = useQuery(QUERY_SINGLE_REQUEST, {
