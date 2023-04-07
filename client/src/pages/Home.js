@@ -27,6 +27,10 @@ const Home = () => {
     return <Navigate to="/" />;
   }
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
             <div>Loading...</div>
           ) : (
             <RequestList
