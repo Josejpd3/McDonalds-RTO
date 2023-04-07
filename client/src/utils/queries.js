@@ -22,7 +22,8 @@ export const QUERY_REQUESTS = gql`
   query getRequests {
     requests {
       _id
-      requestText
+      startDate
+      endDate
       requestAuthor
       createdAt
       requestStatus
