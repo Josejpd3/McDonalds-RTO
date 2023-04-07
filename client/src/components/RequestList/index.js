@@ -53,6 +53,11 @@ const RequestList = ({
                 </>
               )}
             </h4>
+              <button
+                className="deleteBtn"
+              >
+                Delete
+              </button>
           </div>
         ))}
     </main>
