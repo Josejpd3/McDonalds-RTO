@@ -34,7 +34,25 @@ const RequestList = ({
       {requests &&
         requests.map((request) => (
           <div key={request._id} className="card mb-3">
-
+            <h4 className="card-header">
+              {showUsername ? (
+                <Link
+                  to={`/profiles/${request.requestAuthor}`}
+                >
+                  {request.requestAuthor} <br />
+                  <span style={{ fontSize: "1rem" }}>
+                    had this request on {request.createdAt}
+                  </span>
+                </Link>
+              ) : (
+                
+                <>
+                  <span style={{ fontSize: "1rem" }}>
+                    You had this request on {request.createdAt}
+                  </span>
+                </>
+              )}
+            </h4>
           </div>
         ))}
     </main>
