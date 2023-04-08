@@ -14,4 +14,5 @@ import Auth from '../../utils/auth';
 const RequestForm = () => {
 
   const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
 
