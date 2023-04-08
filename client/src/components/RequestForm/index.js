@@ -17,3 +17,8 @@ const RequestForm = () => {
   const [endDate, setEndDate] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
+
+  const [addRequest, { error }] = useMutation(ADD_REQUEST, {
+
+  });
+
