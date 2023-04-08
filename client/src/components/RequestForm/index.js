@@ -19,6 +19,10 @@ const RequestForm = () => {
   const [characterCount, setCharacterCount] = useState(0);
 
   const [addRequest, { error }] = useMutation(ADD_REQUEST, {
+    update(cache, { data: { addRequest } }) {
+
+    },
+  });
 
   });
 
