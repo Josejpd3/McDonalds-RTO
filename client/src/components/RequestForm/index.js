@@ -20,6 +20,17 @@ const RequestForm = () => {
 
   const [addRequest, { error }] = useMutation(ADD_REQUEST, {
     update(cache, { data: { addRequest } }) {
+      try {
+        const { requests } = cache.readQuery({ query: QUERY_REQUESTS });
+
+        cache.writeQuery({
+          query: QUERY_REQUESTS,
+          data: { requests: [addRequest, ...requests] },
+        });
+      } catch (e) {
+        console.error(e);
+      }
+
 
     },
   });
