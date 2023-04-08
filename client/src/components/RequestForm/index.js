@@ -16,3 +16,4 @@ const RequestForm = () => {
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
 
+  const [characterCount, setCharacterCount] = useState(0);
