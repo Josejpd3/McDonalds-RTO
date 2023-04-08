@@ -31,6 +31,14 @@ const RequestForm = () => {
         console.error(e);
       }
 
+      // update me object's cache
+      const { me } = cache.readQuery({ query: QUERY_ME });
+      cache.writeQuery({
+        query: QUERY_ME,
+        data: { me: { ...me, requests: [...me.requests, addRequest] } },
+      });
+    },
+  });
 
     },
   });
