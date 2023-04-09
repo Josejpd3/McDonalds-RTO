@@ -59,7 +59,8 @@ const RequestForm = () => {
         });
 
       } else {
-
+        const endDateObject = parse(endDate, 'yyyy-MM-dd', new Date());
+        const formattedEndDate = format(endDateObject, 'MM/dd/yy');
       }
     } catch (err) {
       console.error(err);
