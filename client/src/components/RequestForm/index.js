@@ -44,6 +44,7 @@ const RequestForm = () => {
     event.preventDefault();
   
     try {
+      const startDateObject = parse(startDate, 'yyyy-MM-dd', new Date());
 
     } catch (err) {
       console.error(err);
