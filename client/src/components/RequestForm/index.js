@@ -45,6 +45,7 @@ const RequestForm = () => {
   
     try {
       const startDateObject = parse(startDate, 'yyyy-MM-dd', new Date());
+      const formattedStartDate = format(startDateObject, 'MM/dd/yy');
 
     } catch (err) {
       console.error(err);
