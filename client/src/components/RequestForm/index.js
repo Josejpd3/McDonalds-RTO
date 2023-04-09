@@ -85,6 +85,9 @@ const RequestForm = () => {
       setStartDate(value);
     }
   
+    if (name === 'endDate') {
+      setEndDate(value);
+    }
   };
 
 
