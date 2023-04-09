@@ -50,6 +50,13 @@ const RequestForm = () => {
       if (endDate.length === 0) {
         const endDateObject = parse(startDate, 'yyyy-MM-dd', new Date());
         const formattedEndDate = format(endDateObject, 'MM/dd/yy');
+        const { data } = await addRequest({
+          variables: {
+            startDate: formattedStartDate,
+            endDate: formattedEndDate,
+            requestAuthor: Auth.getProfile().data.username,
+          },
+        });
 
       } else {
 
