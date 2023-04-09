@@ -69,6 +69,9 @@ const RequestForm = () => {
           },
         });
       }
+  
+      setStartDate('');
+      setEndDate('')
     } catch (err) {
       console.error(err);
     }
