@@ -47,6 +47,13 @@ const RequestForm = () => {
       const startDateObject = parse(startDate, 'yyyy-MM-dd', new Date());
       const formattedStartDate = format(startDateObject, 'MM/dd/yy');
 
+      if (endDate.length === 0) {
+        const endDateObject = parse(startDate, 'yyyy-MM-dd', new Date());
+        const formattedEndDate = format(endDateObject, 'MM/dd/yy');
+
+      } else {
+
+      }
     } catch (err) {
       console.error(err);
     }
