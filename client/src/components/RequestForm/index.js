@@ -104,7 +104,12 @@ const RequestForm = () => {
           >
             Character Count: {characterCount}/280
           </p>
+          <form
+            className="requestForm"
+            onSubmit={handleFormSubmit}
+          >
 
+          </form>
         </>
       ) : (
         <p>
