@@ -120,6 +120,11 @@ const RequestForm = () => {
             <div className="addRequestContainer">
 
             </div>
+            {error && (
+              <div className="error">
+                {error.message}
+              </div>
+            )}
           </form>
         </>
       ) : (
