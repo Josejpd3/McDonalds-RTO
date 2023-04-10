@@ -9,6 +9,7 @@ import { REMOVE_REQUEST } from "../../utils/mutations";
 const RequestList = ({
   requests,
   title,
+  role,
   showTitle = true,
   showUsername = true,
 }) => {
