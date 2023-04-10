@@ -97,6 +97,13 @@ const RequestForm = () => {
 
       {Auth.loggedIn() ? (
         <>
+          <p
+            className={`m-0 ${
+              characterCount === 280 || error ? 'error' : ''
+            }`}
+          >
+            Character Count: {characterCount}/280
+          </p>
 
         </>
       ) : (
