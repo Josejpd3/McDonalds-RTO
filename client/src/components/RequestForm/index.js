@@ -108,6 +108,14 @@ const RequestForm = () => {
             className="requestForm"
             onSubmit={handleFormSubmit}
           >
+            <div>
+              <div>
+                <div>
+                  <input name='startDate' type='date' value={startDate} onChange={handleChange}/>
+                  <input name='endDate' type='date' value={endDate} onChange={handleChange}/>
+                </div>
+              </div>
+            </div>
 
           </form>
         </>
