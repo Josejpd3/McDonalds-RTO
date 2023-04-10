@@ -118,7 +118,9 @@ const RequestForm = () => {
             </div>
 
             <div className="addRequestContainer">
-
+              <button className="addRequestBtn" type="submit">
+                Add Request
+              </button>
             </div>
             {error && (
               <div className="error">
