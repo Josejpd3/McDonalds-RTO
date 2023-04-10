@@ -95,6 +95,16 @@ const RequestForm = () => {
     <main>
       <h3>RTO</h3>
 
+      {Auth.loggedIn() ? (
+        <>
+
+        </>
+      ) : (
+        <p>
+          You need to be logged in to share your requests. Please{' '}
+          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+        </p>
+      )}
     </main>
   );
 };
