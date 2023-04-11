@@ -13,6 +13,7 @@ const StatusController = ({
     const handleUpdate = async (id, requestStatus) => {
         try {
             await updateRequestStatus({ variables: { id, requestStatus } });
+            window.location.reload();
         } catch (error) {
             console.error(error);
         }
