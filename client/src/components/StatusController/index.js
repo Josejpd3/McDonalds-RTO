@@ -12,7 +12,7 @@ const StatusController = ({
 
     const handleUpdate = async (id, requestStatus) => {
         try {
-
+            await updateRequestStatus({ variables: { id, requestStatus } });
         } catch (error) {
             console.error(error);
         }
