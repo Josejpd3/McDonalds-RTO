@@ -58,6 +58,24 @@ export const ADD_COMMENT = gql`
 `;
 
 
+export const UPDATE_REQUEST_STATUS = gql`
+  mutation updateRequestStatus($id: ID!, $requestStatus: String!) {
+    updateRequestStatus(_id: $id, requestStatus: $requestStatus) {
+      _id
+      startDate
+      endDate
+      requestAuthor
+      createdAt
+      requestStatus
+      comments {
+        _id
+        commentText
+      }
+    }
+  }
+`;
+
+
 export const REMOVE_REQUEST = gql`
   mutation removeRequest($requestId: ID!) {
     removeRequest(requestId: $requestId) {
