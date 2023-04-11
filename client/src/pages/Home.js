@@ -58,6 +58,7 @@ const Home = () => {
             <RequestList
               requests={allRequests}
               title="All Requests"
+              role={user.role}
             />
           )}
         </div>
