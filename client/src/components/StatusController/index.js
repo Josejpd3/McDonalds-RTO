@@ -8,6 +8,8 @@ const StatusController = ({
     requestId
 }) => {
 
+    const [updateRequestStatus] = useMutation(UPDATE_REQUEST_STATUS);
+
 
 };
   
