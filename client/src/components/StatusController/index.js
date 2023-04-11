@@ -11,5 +11,9 @@ const StatusController = ({
     const [updateRequestStatus] = useMutation(UPDATE_REQUEST_STATUS);
 
     const handleUpdate = async (id, requestStatus) => {
+        try {
 
+        } catch (error) {
+            console.error(error);
+        }
     };
