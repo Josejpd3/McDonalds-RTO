@@ -76,6 +76,8 @@ const Home = () => {
             <button>Create Request</button>
         </div>
 
+        <RequestForm/>
+
         <div className="listContainer">
           <RequestList
             requests={user.requests}
