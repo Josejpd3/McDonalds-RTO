@@ -25,3 +25,8 @@ const StatusController = ({
       <button onClick={() => handleUpdate(requestId, 'denied')}>Deny</button>
     </div>
   );
+
+};
+  
+export default StatusController;
+  
