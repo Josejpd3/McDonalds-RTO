@@ -22,5 +22,6 @@ const StatusController = ({
   return (
     <div>
       <button onClick={() => handleUpdate(requestId, 'approved')}>Approve</button>
+      <button onClick={() => handleUpdate(requestId, 'denied')}>Deny</button>
     </div>
   );
