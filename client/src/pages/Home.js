@@ -89,6 +89,14 @@ const Home = () => {
                 tab={activeTab}
               />
             )}
+            {activeTab === "approved" && (
+              <RequestList
+                requests={approvedRequests}
+                title="Approved Requests"
+                role={user.role}
+                tab={activeTab}
+              />
+            )}
           </div>
           )}
         </div>
