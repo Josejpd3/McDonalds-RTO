@@ -26,7 +26,7 @@ const Home = () => {
   const tabSession = sessionStorage.getItem('tab');
   const selectedTab = !tabSession ? 'pending' : tabSession;
 
-  const [activeTab, setActiveTab] = useState('pending');
+  const [activeTab, setActiveTab] = useState(selectedTab);
 
   const pendingRequests = allRequests.filter((request) => request.requestStatus === 'pending');
   const approvedRequests = allRequests.filter((request) => request.requestStatus === 'approved');
