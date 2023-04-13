@@ -26,6 +26,7 @@ const Home = () => {
 
   const [activeTab, setActiveTab] = useState('pending');
 
+  const pendingRequests = allRequests.filter((request) => request.requestStatus === 'pending');
   // navigate to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
     return <Navigate to="/" />;
