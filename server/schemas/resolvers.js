@@ -96,8 +96,7 @@ const resolvers = {
     removeRequest: async (parent, { requestId }, context) => {
       if (context.user) {
         const request = await Request.findOneAndDelete({
-          _id: requestId,
-          requestAuthor: context.user.username,
+          _id: requestId
         });
 
         await User.findOneAndUpdate(
