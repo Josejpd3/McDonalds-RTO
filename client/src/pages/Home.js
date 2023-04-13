@@ -32,6 +32,10 @@ const Home = () => {
   const approvedRequests = allRequests.filter((request) => request.requestStatus === 'approved');
   const deniedRequests = allRequests.filter((request) => request.requestStatus === 'denied');
 
+  function setTab(tab) {
+    sessionStorage.setItem('tab', tab);
+    setActiveTab(tab)
+  }
 
   // navigate to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
