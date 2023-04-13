@@ -65,6 +65,14 @@ const RequestList = ({
               </button>
             <div className="card-body">
               <p>{request.startDate} - {request.endDate}</p>
+              <p className={request.requestStatus}>Request Status: {request.requestStatus}</p>
+              {role === 'manager' ? (
+                <div>
+                  <StatusController requestId={request._id} />
+                </div>
+              ) : (
+                <p>your status will update soon</p>
+              )}
             </div>
             <Link
               to={`/requests/${request._id}`}
