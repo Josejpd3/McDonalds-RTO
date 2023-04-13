@@ -68,7 +68,7 @@ const RequestList = ({
               <p className={request.requestStatus}>Request Status: {request.requestStatus}</p>
               {role === 'manager' ? (
                 <div>
-                  <StatusController requestId={request._id} />
+                  <StatusController requestId={request._id} status={request.requestStatus}/>
                 </div>
               ) : (
                 <p>your status will update soon</p>
