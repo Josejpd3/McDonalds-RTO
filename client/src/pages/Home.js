@@ -70,7 +70,9 @@ const Home = () => {
           ) : (
           <div className='tab-container'>
             <div className="tabs">
-
+              <button className={activeTab === 'pending' ? 'active' : ''} onClick={() => setTab('pending')}>
+                Pending Requests ({pendingRequests.length})
+              </button>
             </div>
       
           </div>
