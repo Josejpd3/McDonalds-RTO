@@ -6,6 +6,8 @@ import { useState } from "react";
 import { useMutation } from '@apollo/client';
 import { REMOVE_REQUEST } from "../../utils/mutations";
 
+import StatusController from "../StatusController";
+
 const RequestList = ({
   requests,
   title,
