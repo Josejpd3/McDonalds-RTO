@@ -97,6 +97,14 @@ const Home = () => {
                 tab={activeTab}
               />
             )}
+            {activeTab === "denied" && (
+              <RequestList
+                requests={deniedRequests}
+                title="Denied Requests"
+                role={user.role}
+                tab={activeTab}
+              />
+            )}
           </div>
           )}
         </div>
