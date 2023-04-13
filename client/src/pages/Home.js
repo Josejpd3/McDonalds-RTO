@@ -76,6 +76,9 @@ const Home = () => {
               <button className={activeTab === 'approved' ? 'active' : ''} onClick={() => setTab('approved')}>
                 Approved Requests ({approvedRequests.length})
               </button>
+              <button className={activeTab === 'denied' ? 'active' : ''} onClick={() => setTab('denied')}>
+                Denied Requests ({deniedRequests.length})
+              </button>
             </div>
       
           </div>
