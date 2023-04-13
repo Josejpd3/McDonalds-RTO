@@ -68,11 +68,9 @@ const Home = () => {
           {loadingAll ? (
             <div>Loading...</div>
           ) : (
-            <RequestList
-              requests={allRequests}
-              title="All Requests"
-              role={user.role}
-            />
+          <div className='tab-container'>
+
+          </div>
           )}
         </div>
       </div>
