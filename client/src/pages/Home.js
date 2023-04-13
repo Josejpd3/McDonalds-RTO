@@ -73,6 +73,9 @@ const Home = () => {
               <button className={activeTab === 'pending' ? 'active' : ''} onClick={() => setTab('pending')}>
                 Pending Requests ({pendingRequests.length})
               </button>
+              <button className={activeTab === 'approved' ? 'active' : ''} onClick={() => setTab('approved')}>
+                Approved Requests ({approvedRequests.length})
+              </button>
             </div>
       
           </div>
