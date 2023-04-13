@@ -5,7 +5,8 @@ import { UPDATE_REQUEST_STATUS } from "../../utils/mutations";
 
 
 const StatusController = ({
-    requestId
+    requestId,
+    status,
 }) => {
 
     const [updateRequestStatus] = useMutation(UPDATE_REQUEST_STATUS);
