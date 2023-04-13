@@ -69,7 +69,10 @@ const Home = () => {
             <div>Loading...</div>
           ) : (
           <div className='tab-container'>
+            <div className="tabs">
 
+            </div>
+      
           </div>
           )}
         </div>
