@@ -23,6 +23,7 @@ const Home = () => {
 
   const user = data?.me || data?.user || {};
 
+  const tabSession = sessionStorage.getItem('tab');
 
   const [activeTab, setActiveTab] = useState('pending');
 
