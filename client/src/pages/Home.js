@@ -81,6 +81,14 @@ const Home = () => {
               </button>
             </div>
       
+            {activeTab === "pending" && (
+              <RequestList
+                requests={pendingRequests}
+                title="Pending Requests"
+                role={user.role}
+                tab={activeTab}
+              />
+            )}
           </div>
           )}
         </div>
