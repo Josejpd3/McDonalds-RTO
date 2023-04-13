@@ -12,12 +12,12 @@ const StatusController = ({
     const [updateRequestStatus] = useMutation(UPDATE_REQUEST_STATUS);
 
     const handleUpdate = async (id, requestStatus) => {
-        try {
-            await updateRequestStatus({ variables: { id, requestStatus } });
-            window.location.reload();
-        } catch (error) {
-            console.error(error);
-        }
+      try {
+        await updateRequestStatus({ variables: { id, requestStatus } });
+        window.location.reload()
+      } catch (error) {
+        console.error(error);
+      }
     };
 
   return (
