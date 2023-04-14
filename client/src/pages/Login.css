@@ -9,3 +9,12 @@
     justify-content: center;
 }
 
+.card {
+    width: 55%;
+    height: 75%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
