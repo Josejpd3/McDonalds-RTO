@@ -22,3 +22,8 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+h4 {
+    font-size: 32px;
+}
+
