@@ -27,3 +27,13 @@ h4 {
     font-size: 32px;
 }
 
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 75%;
+        height: 75%;
+        background-color: lightblue;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
