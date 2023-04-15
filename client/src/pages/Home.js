@@ -47,17 +47,7 @@ const Home = () => {
   }
 
   if (!user?.username) {
-    return (
-      <div>
-        <a href='/login'>Login</a>
-        <a href='/signup'>Sign Up</a>
-        <h4>
-          You need to be logged in to see this. Use the navigation links above to
-          sign up or log in!
-        </h4>
-      </div>
-
-    );
+    window.location.href = '/login';
   }
 
   if(user.role === 'manager') {
