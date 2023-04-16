@@ -24,3 +24,9 @@
   padding: 0;
 }
 
+/* General */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--font-color);
+}
