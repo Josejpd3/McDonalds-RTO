@@ -17,5 +17,10 @@
   --spacing-large: 24px;
 }
 
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
