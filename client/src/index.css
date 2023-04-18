@@ -68,3 +68,4 @@ body {
 /* Status */
 
 .pending {color: grey;}
+.denied {color: red;}
