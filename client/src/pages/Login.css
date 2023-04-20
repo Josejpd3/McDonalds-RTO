@@ -3,19 +3,31 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: #f3eaea;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 .card {
-    width: 55%;
+    width: 40%;
     height: 75%;
-    background-color: grey;
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+}
+
+.card-body {
+    width: 75%;
+}
+
+h4 {
+    font-size: 32px;
+    padding-top: 100px;
+    margin-bottom: 50px;
 }
 
 form {
@@ -23,17 +35,67 @@ form {
     flex-direction: column;
 }
 
-h4 {
-    font-size: 32px;
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+.control {
+  border: 0.5px solid #9a9a9a49;
+  border-radius: 40px;
+  outline: none;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #f3eaea;
+  color: black;
+  margin: 10px 0;
+  font-family: inherit;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+button.control {
+    background: #0077cc;
+    border: 0px;
+    color: white;
+}
+
+button:hover{
+    background: #66b3ff;
+}
+
+.welcome-card {
+    background: #0077cc
+}
+
+.welcome-card h4 {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 750px) {
+
+}
+
+@media only screen and (max-width: 749px) {
     .card {
         width: 75%;
         height: 75%;
-        background-color: lightblue;
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+    .welcome-card {
+        display: none;
     }
   }
