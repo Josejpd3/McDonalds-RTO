@@ -91,6 +91,13 @@ h4 {
   padding-top: 10vh;
   margin-bottom: 5vh;
 }
+
+.login-title {
+  text-decoration: underline;
+  text-decoration-color: #0077cc;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 4px;
+}
 /* X--</>--X */
 
 /* SignUp.js */
