@@ -125,6 +125,21 @@ button {
   border: 0;
   cursor: pointer;
 }
+
+.control {
+  border: 0.5px solid #9a9a9a49;
+  border-radius: 400px;
+  outline: none;
+  width: 100%;
+  height: 10vh;
+  padding: 0 4vh;
+  background: #f3eaea;
+  color: black;
+  margin: 2vh 0;
+  font-family: inherit;
+  font-size: 2.8vh;
+  transition: 0.4s;
+}
 /* X--</>--X */
 
 /* SignUp.js */
