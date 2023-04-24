@@ -60,7 +60,16 @@ body {
   overflow-y: scroll; /* Add overflow property */
 }
 
-
+.card {
+  width: 40%;
+  min-height: 80%; /* Add min-height property */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  overflow: auto; /* Add overflow property */
+}
 
 
 
