@@ -181,6 +181,11 @@ button:hover {
   flex-wrap: nowrap;
 }
 
+.welcome-card .signup-button:hover {
+  background-color: white;
+  color: #0077cc;
+}
+
 @media only screen and (max-height: 659px) {
   .card-container {
       align-items: flex-start;
