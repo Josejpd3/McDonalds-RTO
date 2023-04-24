@@ -108,6 +108,17 @@ hr {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
+.signup-button.alt {
+  color: #0077cc;
+  border: 2px solid #0077cc;
+  background-color: transparent;
+  text-decoration: none;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* X--</>--X */
 
 /* SignUp.js */
