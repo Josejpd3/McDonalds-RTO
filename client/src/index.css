@@ -98,6 +98,11 @@ h4 {
   text-decoration-thickness: 4px;
   text-underline-offset: 4px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
 /* X--</>--X */
 
 /* SignUp.js */
