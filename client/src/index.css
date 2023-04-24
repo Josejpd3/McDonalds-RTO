@@ -146,6 +146,10 @@ button.control {
   border: 0px;
   color: white;
 }
+
+button:hover {
+  background: #66b3ff;
+}
 /* X--</>--X */
 
 /* SignUp.js */
