@@ -119,6 +119,12 @@ hr {
   align-items: center;
   justify-content: center;
 }
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
 /* X--</>--X */
 
 /* SignUp.js */
