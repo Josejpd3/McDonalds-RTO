@@ -155,6 +155,13 @@ button:hover {
   background: #0077cc;
 }
 
+.welcome-card h4 {
+  color: white;
+}
+
+.welcome-card p {
+  font-size: 2vh;
+}
 /* X--</>--X */
 
 /* SignUp.js */
