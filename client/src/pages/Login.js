@@ -41,41 +41,41 @@ const Login = (props) => {
   };
 
   return (
-    <main>
-      <div className='card-container'>
-        <div className="card">
-          <h4>Login</h4>
-          <div className="card-body">
+    <div className="card-container">
+      <div className='card-wrapper'>
+        <div className="card login-card">
+          <h4 className='login-title'>Login</h4>
             {data ? (
               <p>
-                Success! You may now head{' '}
+                Success! You may now head{" "}
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
+            <div className="card-body">
               <form onSubmit={handleFormSubmit}>
                 <input
-                  className="form-input"
-                  placeholder="Your email"
+                  className="form-input control"
+                  placeholder="Your username"
                   name="email"
                   type="email"
                   value={formState.email}
                   onChange={handleChange}
                 />
                 <input
-                  className="form-input"
+                  className="form-input control"
                   placeholder="******"
                   name="password"
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
                 />
-                <button
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
+                <button className="control" type="submit">
+                  Login
                 </button>
               </form>
+              <hr/>
+              <a className='signup-button control alt' href='/signup'>Create Account</a>
+            </div>
             )}
 
             {error && (
