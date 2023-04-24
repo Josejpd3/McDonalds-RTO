@@ -81,6 +81,10 @@ body {
   flex: 1;
 }
 
+.card-body {
+  width: 75%;
+  margin-bottom: 100px;
+}
 /* X--</>--X */
 
 /* SignUp.js */
