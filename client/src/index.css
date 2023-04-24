@@ -103,6 +103,11 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+hr {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 /* X--</>--X */
 
 /* SignUp.js */
