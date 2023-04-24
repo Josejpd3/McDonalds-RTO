@@ -78,15 +78,15 @@ const Login = (props) => {
             </div>
             )}
 
-            {error && (
-              <div>
-                {error.message}
-              </div>
-            )}
-          </div>
+            {error && <div>{error.message}</div>}
+        </div>
+        <div className="card welcome-card">
+              <h4>Welcome!</h4>
+              <p>Don't have an account?</p>
+              <a href='/signup' className='signup-button'>Create Account</a>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
