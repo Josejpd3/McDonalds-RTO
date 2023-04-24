@@ -162,6 +162,19 @@ button:hover {
 .welcome-card p {
   font-size: 2vh;
 }
+
+.welcome-card .signup-button {
+  color: white;
+  border: 2px solid white;
+  border-radius: 200px;
+  text-decoration: none;
+  padding: 2.8vh 10vw;
+  margin-top: 2vh;
+  font-size: 2.8vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
 /* X--</>--X */
 
 /* SignUp.js */
