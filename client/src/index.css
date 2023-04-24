@@ -150,6 +150,11 @@ button.control {
 button:hover {
   background: #66b3ff;
 }
+
+.welcome-card {
+  background: #0077cc;
+}
+
 /* X--</>--X */
 
 /* SignUp.js */
