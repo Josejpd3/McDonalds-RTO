@@ -85,6 +85,12 @@ body {
   width: 75%;
   margin-bottom: 100px;
 }
+
+h4 {
+  font-size: 5vh;
+  padding-top: 10vh;
+  margin-bottom: 5vh;
+}
 /* X--</>--X */
 
 /* SignUp.js */
