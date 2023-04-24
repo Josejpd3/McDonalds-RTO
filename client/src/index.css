@@ -140,6 +140,12 @@ button {
   font-size: 2.8vh;
   transition: 0.4s;
 }
+
+button.control {
+  background: #0077cc;
+  border: 0px;
+  color: white;
+}
 /* X--</>--X */
 
 /* SignUp.js */
