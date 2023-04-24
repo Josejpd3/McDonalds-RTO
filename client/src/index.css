@@ -47,6 +47,18 @@ body {
 
 /* Login.js */
 
+.card-container {
+  position: absolute;
+  top: 0; /* Add top property */
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  background-color: #f3eaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll; /* Add overflow property */
+}
 
 
 
