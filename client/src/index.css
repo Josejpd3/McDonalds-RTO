@@ -120,6 +120,11 @@ hr {
   justify-content: center;
 }
 
+.signup-button.alt:hover {
+  background-color: #0077cc;
+  color: white;
+}
+
 button {
   background: transparent;
   border: 0;
