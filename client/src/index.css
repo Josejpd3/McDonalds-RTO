@@ -103,6 +103,9 @@ body {
   text-decoration-thickness: 0.5vh;
   text-underline-offset: 0.5vh;
 }
+
+h4.signup-title {
+  padding-top: 5vh;
 }
 
 form {
