@@ -71,6 +71,10 @@ body {
   overflow: auto; /* Add overflow property */
 }
 
+.card.signup-card {
+  overflow: hidden;
+}
+
 .card-wrapper {
   display: flex;
   width: 80%;
