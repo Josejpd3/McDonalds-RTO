@@ -225,6 +225,15 @@ button:hover {
       min-width: 100%;
       min-height: 100%;
   }
+
+  .card.signup-card {
+    overflow: scroll;
+  }
+  
+  h4.signup-title {
+    padding-top: 18vh;
+  }
+
 }
 
 @media only screen and (min-width: 1500px) {
