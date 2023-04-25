@@ -91,7 +91,7 @@ body {
   margin-bottom: 100px;
 }
 
-h4 {
+.card h4 {
   font-size: 5vh;
   padding-top: 10vh;
   margin-bottom: 5vh;
