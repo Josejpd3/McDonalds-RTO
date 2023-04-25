@@ -81,6 +81,7 @@ body {
 }
 
 .login-card,
+.signup-card,
 .welcome-card {
   flex: 1;
 }
