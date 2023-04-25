@@ -191,7 +191,7 @@ button:hover {
   flex-wrap: nowrap;
 }
 
-.welcome-card .signup-button:hover {
+.welcome-card .signup-button:hover, .login-button:hover {
   background-color: white;
   color: #0077cc;
 }
