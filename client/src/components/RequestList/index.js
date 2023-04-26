@@ -35,53 +35,49 @@ const RequestList = ({
       {showTitle && <h3>{title}</h3>}
       {requests &&
         requests.map((request) => (
-          <div key={request._id} className="card mb-3">
-            <h4 className="card-header">
-              {showUsername ? (
-                <Link
-                  to={`/profiles/${request.requestAuthor}`}
-                >
-                  {request.requestAuthor} <br />
-                  <span style={{ fontSize: "1rem" }}>
-                    had this request on {request.createdAt}
-                  </span>
-                </Link>
-              ) : (
-                
-                <>
-                  <span style={{ fontSize: "1rem" }}>
-                    You had this request on {request.createdAt}
-                  </span>
-                </>
-              )}
-            </h4>
-              <button
-                className="deleteBtn"
-                onClick={() => {
-                  handleDelete(request._id);
-                }}
-              >
-                Delete
-              </button>
-            <div className="card-body">
-              <p>{request.startDate} - {request.endDate}</p>
-              <p className={request.requestStatus}>Request Status: {request.requestStatus}</p>
-              {role === 'manager' ? (
-                <div>
-                  <StatusController requestId={request._id} status={request.requestStatus}/>
-                </div>
-              ) : (
-                <p>your status will update soon</p>
-              )}
+          <div key={request._id} className="request">
+            <div className="view-button-container requestItem">
+              <Link to={`/requests/${request._id}`}>View Request</Link>
             </div>
-            <Link
-              to={`/requests/${request._id}`}
-            >
-              View Request
-            </Link>
+            {role === 'manager' ? (
+              <div className="statusController requestItem">
+                <StatusController requestId={request._id} status={request.requestStatus}/>
+              </div>
+            ) : (
+              <div style={{display: "none"}}>your status will update soon</div>
+            )}
+            <div className="request-date-container requestItem">
+              <p>Request</p>
+              <p>{request.startDate} - {request.endDate}</p>
+            </div>
+            <div className="status-container requestItem">
+              <p>Status</p>
+              <p className={request.requestStatus}>{request.requestStatus}</p>
+            </div>
+
+            {showUsername ? (
+              <Link to={`/profiles/${request.requestAuthor}`}>
+                {request.requestAuthor} <br />
+                <div className="created-date-container requestItem" style={{ fontSize: "1rem" }}>
+                  <p>Created On</p>
+                  {request.createdAt}
+                </div>
+              </Link>
+            ) : (
+              
+              <>
+                <div className="created-date-container requestItem" style={{ fontSize: "1rem" }}>
+                  <p>Created On</p>
+                  {request.createdAt}
+                </div>
+              </>
+            )}
+            <div className="delete-button-container requestItem">
+              <button className="deleteBtn" onClick={() => {handleDelete(request._id);}}>Delete</button>
+            </div>
           </div>
         ))}
-    </main>
+    </div>
   );
 };
 
