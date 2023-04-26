@@ -40,11 +40,10 @@ const Signup = () => {
   };
 
   return (
-    <main>
-      <div className="container">
-        <div className="card">
-          <h4 className="card-header">Sign Up</h4>
-          <div className="card-body">
+    <div className="card-container">
+      <div className="card-wrapper">
+        <div className="card signup-card">
+          <h4 className="signup-title">Sign Up</h4>
             {data ? (
               <p>
                 Success! You may now head{' '}
@@ -94,7 +93,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
