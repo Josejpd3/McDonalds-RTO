@@ -25,6 +25,10 @@ const Home = () => {
 
   const [showModal, setShowModal] = useState(false);
 
+  function openModal() {
+    setShowModal(true);
+  }
+
   const tabSession = sessionStorage.getItem('tab');
   const selectedTab = !tabSession ? 'pending' : tabSession;
 
