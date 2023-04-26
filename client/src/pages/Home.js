@@ -120,6 +120,16 @@ const Home = () => {
 
         <div className='buttonContainer'>
             <button onClick={openModal}>Create Request</button>
+            {showModal && (
+              <div className='modal'>
+                <div className='modal-content'>
+                  <span className='close' onClick={closeModal}>
+                    &times;
+                  </span>
+                  <RequestForm/>  
+                </div>
+              </div>
+            )}
         </div>
 
         <RequestForm/>
