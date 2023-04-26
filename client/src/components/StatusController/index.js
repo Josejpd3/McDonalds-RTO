@@ -21,12 +21,12 @@ const StatusController = ({
     };
 
   return (
-    <div>
+    <div className="statusController">
       {status === 'approved' || 'denied' ? (
         <div>
           {status === 'approved' ? (
-            <div>
-              <button onClick={() => handleUpdate(requestId, 'denied')}>Deny</button>
+            <div className="deny-button">
+              <button onClick={() => handleUpdate(requestId, 'denied')} className="deny-button">Deny</button>
             </div>
           ) : (
             <div>
