@@ -31,7 +31,7 @@ const RequestList = ({
   }
 
   return (
-    <main>
+    <div className="requestListComponent">
       {showTitle && <h3>{title}</h3>}
       {requests &&
         requests.map((request) => (
