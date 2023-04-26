@@ -23,6 +23,8 @@ const Home = () => {
 
   const user = data?.me || data?.user || {};
 
+  const [showModal, setShowModal] = useState(false);
+
   const tabSession = sessionStorage.getItem('tab');
   const selectedTab = !tabSession ? 'pending' : tabSession;
 
