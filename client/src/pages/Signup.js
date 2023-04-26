@@ -77,7 +77,7 @@ const Signup = () => {
                   onChange={handleChange}
                 />
                 <button
-                  className="submitButton"
+                  className="signup-button control"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
