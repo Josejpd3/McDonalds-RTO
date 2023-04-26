@@ -92,7 +92,7 @@ const RequestForm = () => {
 
 
   return (
-    <main>
+    <div className='requestFormComponent'>
       <h3>RTO</h3>
 
       {Auth.loggedIn() ? (
@@ -135,7 +135,7 @@ const RequestForm = () => {
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
-    </main>
+    </div>
   );
 };
 
