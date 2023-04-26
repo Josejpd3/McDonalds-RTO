@@ -50,6 +50,7 @@ const Signup = () => {
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
+            <div className="card-body">
               <form onSubmit={handleFormSubmit}>
                 <input
                   className="form-input"
