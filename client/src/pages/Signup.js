@@ -81,9 +81,13 @@ const Signup = () => {
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
-                  Submit
+                  Create Account
                 </button>
               </form>
+              <hr/>
+              <p>Already Have An Account?</p>
+              <a className='signup-button control alt' href='/login'>Login</a>
+            </div>
             )}
 
             {error && (
