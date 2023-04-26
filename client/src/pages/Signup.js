@@ -95,7 +95,11 @@ const Signup = () => {
                 {error.message}
               </div>
             )}
-          </div>
+        </div>
+        <div className="card welcome-card">
+              <h4>Welcome!</h4>
+              <p>Already have an account?</p>
+              <a href='/login' className='login-button'>Login</a>
         </div>
       </div>
     </div>
