@@ -119,7 +119,7 @@ const Home = () => {
         </h2>
 
         <div className='buttonContainer'>
-            <button>Create Request</button>
+            <button onClick={openModal}>Create Request</button>
         </div>
 
         <RequestForm/>
