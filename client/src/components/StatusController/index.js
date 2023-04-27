@@ -22,7 +22,12 @@ const StatusController = ({
 
   return (
     <div className="statusController">
-      {status === 'approved' || 'denied' ? (
+      {status === 'pending' ? (
+        <div className="approve-deny-container">
+          <button onClick={() => handleUpdate(requestId, 'approved')} className="approve-button">Approve</button>
+          <button onClick={() => handleUpdate(requestId, 'denied')} className="deny-button">Deny</button>
+        </div>
+      ) : (
         <div>
           {status === 'approved' ? (
             <div className="deny-button">
@@ -33,11 +38,6 @@ const StatusController = ({
               <button onClick={() => handleUpdate(requestId, 'approved')} className="approve-button">Approve</button>
             </div>
           )}
-        </div>
-      ) : (
-        <div>
-          <button onClick={() => handleUpdate(requestId, 'approved')} className="approve-button">Approve</button>
-          <button onClick={() => handleUpdate(requestId, 'denied')} className="deny-button">Deny</button>
         </div>
       )}
 
