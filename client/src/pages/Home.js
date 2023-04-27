@@ -113,11 +113,8 @@ const Home = () => {
     )
   } else {
       return (
-    <main>
       <div className="mainContainer">
-        <h2>
-          Welcome {user.username} profile.
-        </h2>
+        <Header role={user.role}/>
 
         <div className='buttonContainer'>
             <button onClick={openModal}>Create Request</button>
