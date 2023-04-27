@@ -5,7 +5,10 @@ import Auth from '../../utils/auth';
 
 
 const Header = (props) => {
-
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
   return (
     <header className="header">
 
