@@ -64,7 +64,8 @@ const Home = () => {
   if(user.role === 'manager') {
     return (
       <div>
-        <h1>Hello {user.role}</h1>
+        <Header role={user.role}/>
+
         <div className="listContainer">
           {loadingAll ? (
             <div>Loading...</div>
