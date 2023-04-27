@@ -12,7 +12,9 @@ const Header = (props) => {
   return (
     <header className="header">
       <div className="container">
+        <nav className="navbar">
 
+        </nav>
       </div>
     </header>
   );
