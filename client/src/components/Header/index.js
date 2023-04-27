@@ -17,6 +17,9 @@ const Header = (props) => {
               <h1>Welcome!</h1>
               <p>{props.role}</p>
           </div>
+          <ul className="navbar-nav">
+
+          </ul>
         </nav>
       </div>
     </header>
