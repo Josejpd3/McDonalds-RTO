@@ -21,6 +21,9 @@ const Header = (props) => {
             <li className="nav-item">
               <Link to="/about" className="nav-link btn btn-secondary about">Account</Link>
             </li>
+            <button className="btn btn-lg btn-light m-2" onClick={logout}>
+                Logout
+            </button>
           </ul>
         </nav>
       </div>
