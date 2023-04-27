@@ -18,7 +18,9 @@ const Header = (props) => {
               <p>{props.role}</p>
           </div>
           <ul className="navbar-nav">
-
+            <li className="nav-item">
+              <Link to="/about" className="nav-link btn btn-secondary about">Account</Link>
+            </li>
           </ul>
         </nav>
       </div>
