@@ -13,7 +13,10 @@ const Header = (props) => {
     <header className="header">
       <div className="container">
         <nav className="navbar">
-
+          <div className='header-title'>
+              <h1>Welcome!</h1>
+              <p>{props.role}</p>
+          </div>
         </nav>
       </div>
     </header>
