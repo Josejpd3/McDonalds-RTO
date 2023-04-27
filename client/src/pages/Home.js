@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
+import { Link } from 'react-router-dom';
 
 import RequestList from '../components/RequestList';
 import RequestForm from '../components/RequestForm'
