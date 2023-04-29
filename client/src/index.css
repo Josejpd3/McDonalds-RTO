@@ -71,6 +71,11 @@ header h1 {
   cursor: pointer;
 }
 
+.listContainer .tabs button.active {
+  background-color: #333;
+  color: #fff;
+}
+
 
 
 
