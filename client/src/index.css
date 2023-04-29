@@ -98,6 +98,15 @@ header h1 {
   margin-bottom: 20px;
 }
 
+.buttonContainer button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
 
 /* X--<Home/>--X */
