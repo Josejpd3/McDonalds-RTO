@@ -83,6 +83,10 @@ header h1 {
   padding: 10px;
 }
 
+.listContainer .request h2 {
+  margin-top: 0;
+}
+
 
 
 
