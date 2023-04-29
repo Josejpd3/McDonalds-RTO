@@ -120,6 +120,13 @@ header h1 {
   align-items: center;
 }
 
+.modal-content {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
 
 
 /* X--<Home/>--X */
