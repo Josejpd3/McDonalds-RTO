@@ -581,6 +581,14 @@ button:hover {
   list-style-type: none;
 }
 
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
 
 }
 
