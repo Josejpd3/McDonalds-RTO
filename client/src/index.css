@@ -123,8 +123,23 @@ header h1 {
 .modal-content {
   background-color: #fff;
   border-radius: 5px;
-  padding: 20px;
+  padding: 0px;
   position: relative;
+}
+
+.modal-content .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  right: 0;
+  font-size: 6vh;
+  width: 60px;
+  height: 60px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
 }
 
 
