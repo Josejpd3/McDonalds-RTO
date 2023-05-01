@@ -426,6 +426,20 @@ button:hover {
   max-width: 100%;
 }
 
+.request {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 80%;
+}
+
 /* X--</>--X */
 
 
