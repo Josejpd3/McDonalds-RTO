@@ -489,6 +489,12 @@ button:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .request {
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+  
 
 }
 
