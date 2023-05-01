@@ -521,14 +521,23 @@ button:hover {
   margin: 0;
 }
 
-.request .view-button-container {
+.request .view-button-container, .status-controller, .request-date-container, .created-date-container {
   margin-bottom: 1rem;
 }
 
+.request .delete-button-container {
+  margin-top: 1rem;
+  text-align: center;
+}
 
-  .request .delete-button-container {
-    margin-top: 0.5rem;
-  }
+
+
+
+.request .delete-button-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 }
 
 
