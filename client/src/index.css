@@ -457,6 +457,11 @@ button:hover {
   flex: 1;
 }
 
+.request .created-date-container {
+  flex: 1;
+  text-align: center;
+}
+
 /* X--</>--X */
 
 
