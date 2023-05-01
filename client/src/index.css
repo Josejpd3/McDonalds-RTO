@@ -160,6 +160,10 @@ header h1 {
     align-items: center;
   }
 
+  .listContainer .tabs button {
+    margin: 10px 0;
+  }
+
 }
 
 
