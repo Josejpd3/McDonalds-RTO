@@ -452,6 +452,11 @@ button:hover {
   flex: 1;
   text-align: center;
 }
+
+.request .status-container {
+  flex: 1;
+}
+
 /* X--</>--X */
 
 
