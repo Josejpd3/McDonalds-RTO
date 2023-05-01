@@ -7,7 +7,7 @@
   --background-dark: #5d5c5c;
   --background-dark-secondary: #2a2929;
   --font-color: #333333;
-  --font-family: 'Helvetica Neue', sans-serif;
+  --font-family: "Helvetica Neue", sans-serif;
   --font-size: 16px;
   --line-height: 1.5;
   --border-radius: 4px;
@@ -401,6 +401,8 @@ button:hover {
 
 
 
+
+
 /* X--</>--X */
 
 /* XXXXXXXXXXXXXXXXX */
@@ -413,6 +415,16 @@ button:hover {
 
 
 /* Request List */
+
+.requestListComponent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
 
 /* X--</>--X */
 
