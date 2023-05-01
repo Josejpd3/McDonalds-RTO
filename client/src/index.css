@@ -155,6 +155,11 @@ header h1 {
     width: 100%;
   }
 
+  .listContainer .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
 
