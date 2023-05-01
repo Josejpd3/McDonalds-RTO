@@ -646,6 +646,14 @@ button.approve-button:hover {
   background-color: rgb(126, 220, 139);
 }
 
+button.deny-button:hover {
+  background-color: rgb(221, 75, 75);
+}
+
+
+
+/* X--</>--X */
+
 /* XXXXXXXXXXXXXXXXX */
 
 
