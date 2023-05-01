@@ -142,6 +142,13 @@ header h1 {
   cursor: pointer;
 }
 
+.formHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 
 /* X--<Home/>--X */
