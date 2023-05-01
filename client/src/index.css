@@ -521,6 +521,10 @@ button:hover {
   margin: 0;
 }
 
+.request .view-button-container {
+  margin-bottom: 1rem;
+}
+
 
   .request .delete-button-container {
     margin-top: 0.5rem;
