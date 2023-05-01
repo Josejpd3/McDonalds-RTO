@@ -636,6 +636,12 @@ button.approve-button, button.deny-button{
   margin: 0vh 1vw;
 }
 
+button.approve-button:hover, button.deny-button:hover {
+  border-radius: 20px;
+  border: 4px solid #0077cc;
+}
+
+
 /* XXXXXXXXXXXXXXXXX */
 
 
