@@ -169,6 +169,10 @@ header h1 {
     align-items: center;
   }
 
+  .buttonContainer button {
+    margin: 10px 0;
+  }
+
 }
 
 
