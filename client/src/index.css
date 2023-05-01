@@ -620,6 +620,12 @@ button:hover {
 /* X--</>--X */
 
 
+/* Controller */
+
+div.statusController.requestItem {
+  width: 20vw;
+}
+
 /* XXXXXXXXXXXXXXXXX */
 
 
