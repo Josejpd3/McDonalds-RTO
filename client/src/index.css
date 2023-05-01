@@ -535,6 +535,16 @@ button:hover {
   text-decoration: none;
 }
 
+.request .deleteBtn {
+  background-color: #0077cc;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
 
 
 .request .delete-button-container {
