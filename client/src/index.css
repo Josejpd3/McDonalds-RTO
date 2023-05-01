@@ -589,6 +589,11 @@ button:hover {
   transition: all 0.3s ease;
 }
 
+.about {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 2px;
+}
 
 }
 
