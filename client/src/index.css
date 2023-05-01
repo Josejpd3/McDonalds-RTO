@@ -468,6 +468,11 @@ button:hover {
   flex: 1;
 }
 
+.request a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
 /* X--</>--X */
 
 
