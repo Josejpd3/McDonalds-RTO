@@ -499,6 +499,12 @@ button:hover {
     text-align: center;
   }
 
+  .request .delete-button-container {
+    margin-top: 0.5rem;
+  }
+}
+
+
 
 }
 
