@@ -164,6 +164,11 @@ header h1 {
     margin: 10px 0;
   }
 
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
 
