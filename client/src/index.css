@@ -530,6 +530,10 @@ button:hover {
   text-align: center;
 }
 
+.request a {
+  color: #0077cc;
+  text-decoration: none;
+}
 
 
 
