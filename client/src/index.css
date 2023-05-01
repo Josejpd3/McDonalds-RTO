@@ -546,10 +546,11 @@ button:hover {
   transition: background-color 0.3s ease;
 }
 
+.request .deleteBtn:hover {
+  background-color: #0062a2;
+}
 
-.request .delete-button-container {
-  margin-top: 1rem;
-  text-align: center;
+
 }
 
 }
