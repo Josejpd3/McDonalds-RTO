@@ -600,6 +600,16 @@ button:hover {
   border-radius: 5px;
 }
 
+.btn-primary {
+  background-color: #fff;
+  color: #0077cc;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
 }
 
 
