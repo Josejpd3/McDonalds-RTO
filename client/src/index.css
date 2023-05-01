@@ -626,6 +626,16 @@ div.statusController.requestItem {
   width: 20vw;
 }
 
+button.approve-button, button.deny-button{
+  border-radius: 20px;
+  border: 2px solid #0077cc;
+  width: 4vw;
+  min-width: 100px;
+  padding: 10px;
+  height: 100%;
+  margin: 0vh 1vw;
+}
+
 /* XXXXXXXXXXXXXXXXX */
 
 
