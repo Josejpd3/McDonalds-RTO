@@ -45,5 +45,7 @@ function DateRangePicker({closeModal}) {
   const isBlockedDate = date => {
     const today = new Date();
     const formattedDate = date.toISOString().slice(0, 10);
+    const twoWeeksFromNow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 14);
+  
   };
 
