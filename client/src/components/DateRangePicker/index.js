@@ -43,6 +43,7 @@ function DateRangePicker({closeModal}) {
   const [mainDates, setMainDates]= useState({ startDate: '', endDate: ''})
 
   const isBlockedDate = date => {
+    const today = new Date();
 
   };
 
