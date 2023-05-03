@@ -56,5 +56,13 @@ function DateRangePicker({closeModal}) {
 
   const getDaysInMonth = (year, month) => new Date(year, month + 1, 0).getDate();
 
+  const formatTimestamp = (timestamp) => {
+    const date = new Date(timestamp);
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const year = date.getFullYear().toString().slice(-2);
+    return `${month}/${day}/${year}`;
+  }
+
   };
 
