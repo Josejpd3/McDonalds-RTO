@@ -38,4 +38,4 @@ function DateRangePicker({closeModal}) {
     },
   });
 
-
+  const [month, setMonth] = useState(new Date());
