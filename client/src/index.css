@@ -575,25 +575,9 @@ button:hover {
   justify-content: space-between;
 }
 
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-item {
-  margin-right: 1rem;
-  list-style-type: none;
-}
-
-.nav-link {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.about {
+.logout {
+  font-size: 2vh;
+  color: white;
   text-decoration: underline;
   text-decoration-color: white;
   text-decoration-thickness: 2px;
