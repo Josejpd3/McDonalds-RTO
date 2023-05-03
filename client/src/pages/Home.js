@@ -22,6 +22,16 @@ const Home = () => {
   const { loadingAll, data: allData } = useQuery(QUERY_REQUESTS);
   const allRequests = allData?.requests || [];
 
+  const sortedRequests = allRequests.slice().sort((a, b) => {
+    if (a.createdAt < b.createdAt) {
+      return -1;
+    } else if (a.createdAt > b.createdAt) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+
   const user = data?.me || data?.user || {};
 
   const [showModal, setShowModal] = useState(false);
