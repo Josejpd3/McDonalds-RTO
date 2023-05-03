@@ -41,3 +41,8 @@ function DateRangePicker({closeModal}) {
   const [month, setMonth] = useState(new Date());
   const [selectedDates, setSelectedDates] = useState({ startDate: null, endDate: null });
   const [mainDates, setMainDates]= useState({ startDate: '', endDate: ''})
+
+  const isBlockedDate = date => {
+
+  };
+
