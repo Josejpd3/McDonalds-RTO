@@ -8,6 +8,14 @@ import { QUERY_REQUESTS, QUERY_ME } from '../../utils/queries';
 import Auth from '../../utils/auth';
 
 function DateRangePicker({closeModal}) {
+  
+  const blockedDates = [
+    { date: '2023-05-01', reason: 'Holiday' },
+    { date: '2023-05-07', reason: 'Maintenance' },
+    { date: '2023-04-28', reason: 'Event' },
+  ];
+
+
   const [addRequest] = useMutation(ADD_REQUEST, {
     update(cache, { data: { addRequest } }) {
       try {
