@@ -47,5 +47,12 @@ function DateRangePicker({closeModal}) {
     const formattedDate = date.toISOString().slice(0, 10);
     const twoWeeksFromNow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 14);
   
+    return (
+      new Date(formattedDate) < today ||
+      blockedDates.some(blockedDate => blockedDate.date === formattedDate) ||
+      new Date(formattedDate) <= twoWeeksFromNow
+    );
+  };
+
   };
 
