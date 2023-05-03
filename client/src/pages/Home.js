@@ -49,9 +49,9 @@ const Home = () => {
 
   const [activeTab, setActiveTab] = useState(selectedTab);
 
-  const pendingRequests = allRequests.filter((request) => request.requestStatus === 'pending');
-  const approvedRequests = allRequests.filter((request) => request.requestStatus === 'approved');
-  const deniedRequests = allRequests.filter((request) => request.requestStatus === 'denied');
+  const pendingRequests = sortedRequests.filter((request) => request.requestStatus === 'pending');
+  const approvedRequests = sortedRequests.filter((request) => request.requestStatus === 'approved');
+  const deniedRequests = sortedRequests.filter((request) => request.requestStatus === 'denied');
 
   function setTab(tab) {
     sessionStorage.setItem('tab', tab);
