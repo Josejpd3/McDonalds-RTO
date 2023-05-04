@@ -133,5 +133,6 @@ function DateRangePicker({closeModal}) {
     const { startDate: currentStartDate, endDate: currentEndDate } = selectedDates;
     const monthDays = getDaysInMonth(month.getFullYear(), month.getMonth());
     const monthStartWeekday = new Date(month.getFullYear(), month.getMonth(), 1).getDay();
+    const monthEndWeekday = new Date(month.getFullYear(), month.getMonth(), monthDays).getDay();
 
   };
