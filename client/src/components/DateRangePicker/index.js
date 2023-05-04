@@ -118,5 +118,9 @@ function DateRangePicker({closeModal}) {
     }
   }
 
+
+  const handlePreviousMonth = () => {
+    const newMonth = new Date(month.getFullYear(), month.getMonth() - 1);
+    setMonth(newMonth);
   };
 
