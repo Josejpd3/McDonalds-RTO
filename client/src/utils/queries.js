@@ -56,7 +56,8 @@ export const QUERY_ME = gql`
     me {
       _id
       username
-      email
+      firstName
+      lastName
       role
       requests {
         _id
