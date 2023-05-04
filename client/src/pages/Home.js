@@ -95,6 +95,11 @@ const Home = () => {
                       <DateRangePicker closeModal={closeModal} />
                     </div>
                     ) : (
+                      <p>
+                        You need to be logged in to share your requests. Please{' '}
+                        <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
