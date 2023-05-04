@@ -81,7 +81,9 @@ const Home = () => {
             <button className='create-request-button' onClick={openModal}>Create Request</button>
             {showModal && (
               <div className='modal'>
+                <div className='modal-content'>
 
+                </div>
               </div>
             )}
         </div>
