@@ -213,6 +213,7 @@ function DateRangePicker({closeModal}) {
         <div className={`confirm-date ${(selectedDates.endDate ? `selected` : ``)}`}>End Date <br/>{(selectedDates.endDate ? `${mainDates.endDate}` : '')}</div>
       </div>
       {renderCalendar()}
+      <button className='confirm-request-button' onClick={createRequest} disabled={(selectedDates.startDate && selectedDates.endDate ? false : true)}>Confirm Request</button>
     </div>
   );
 }
