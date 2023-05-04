@@ -187,16 +187,12 @@ const Home = () => {
               )}
         </div>
 
-        <RequestForm/>
-
-        <div className="listContainer">
-          <RequestList
-            requests={user.requests}
-            title={`${user.username}'s requests...`}
-            showTitle={false}
-            showUsername={false}
-          />
-        </div>
+        <RequestList
+          requests={user.requests}
+          title={`${user.username}'s requests...`}
+          showTitle={false}
+          showUsername={false}
+        />
         {!userParam && (
           <div
             className="divider"
