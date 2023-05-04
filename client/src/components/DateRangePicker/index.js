@@ -208,7 +208,9 @@ function DateRangePicker({closeModal}) {
 
   return (
     <div className="date-range-picker">
+      <div className='confirm-container'>
 
+      </div>
     </div>
   );
 }
