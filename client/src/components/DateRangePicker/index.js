@@ -88,5 +88,9 @@ function DateRangePicker({closeModal}) {
 
   useEffect(() => {
   }, [mainDates]);
+
+  const createRequest = async (event) => {
+
+  }
   };
 
