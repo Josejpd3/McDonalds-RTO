@@ -152,6 +152,7 @@ function DateRangePicker({closeModal}) {
     return (
       <div className="calendar">
         <div className="month-header">
+          <button className='prevButton' onClick={handlePreviousMonth}>Prev</button>
 
         </div>
       </div>
