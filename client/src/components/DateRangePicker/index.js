@@ -86,5 +86,7 @@ function DateRangePicker({closeModal}) {
     }
   };
 
+  useEffect(() => {
+  }, [mainDates]);
   };
 
