@@ -65,6 +65,7 @@ function DateRangePicker({closeModal}) {
   }
 
   const handleDateClick = (date) => {
+    const { startDate: currentStartDate, endDate: currentEndDate } = selectedDates;
 
   };
 
