@@ -206,7 +206,9 @@ function DateRangePicker({closeModal}) {
     );
   };
 
-        </div>
-      </div>
-    );
-  };
+  return (
+    <div className="date-range-picker">
+
+    </div>
+  );
+}
