@@ -4,7 +4,8 @@ const typeDefs = gql`
   type User {
     _id: ID
     username: String
-    email: String
+    firstName: String
+    lastName: String
     password: String
     role: String
     requests: [Request]!
