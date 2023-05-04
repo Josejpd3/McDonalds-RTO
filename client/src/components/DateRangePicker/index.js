@@ -90,7 +90,7 @@ function DateRangePicker({closeModal}) {
   }, [mainDates]);
 
   const createRequest = async (event) => {
-
-  }
+    event.preventDefault();
+  
   };
 
