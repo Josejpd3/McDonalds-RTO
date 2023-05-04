@@ -112,6 +112,7 @@ function DateRangePicker({closeModal}) {
       }
 
       closeModal();
+      setMainDates({startDate: '', endDate: ''})
     } catch (err) {
       console.error(err);
     }
