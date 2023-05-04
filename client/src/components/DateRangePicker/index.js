@@ -92,5 +92,12 @@ function DateRangePicker({closeModal}) {
   const createRequest = async (event) => {
     event.preventDefault();
   
+    try {
+ 
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
   };
 
