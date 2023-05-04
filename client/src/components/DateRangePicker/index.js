@@ -130,5 +130,6 @@ function DateRangePicker({closeModal}) {
   };
 
   const renderCalendar = () => {
+    const { startDate: currentStartDate, endDate: currentEndDate } = selectedDates;
 
   };
