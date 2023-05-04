@@ -94,7 +94,7 @@ function DateRangePicker({closeModal}) {
   
     try {
       if (mainDates.startDate && mainDates.endDate) {
-        const { data } = await addRequest({
+        await addRequest({
           variables: {
             startDate: mainDates.startDate,
             endDate: mainDates.endDate,
@@ -102,7 +102,7 @@ function DateRangePicker({closeModal}) {
           },
         });
       } else if (mainDates.startDate && mainDates.endDate === '') {
-        const { data } = await addRequest({
+        await addRequest({
           variables: {
             startDate: mainDates.startDate,
             endDate: mainDates.startDate,
