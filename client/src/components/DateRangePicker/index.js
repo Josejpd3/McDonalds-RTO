@@ -128,3 +128,7 @@ function DateRangePicker({closeModal}) {
     const newMonth = new Date(month.getFullYear(), month.getMonth() + 1);
     setMonth(newMonth);
   };
+
+  const renderCalendar = () => {
+
+  };
