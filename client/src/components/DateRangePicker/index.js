@@ -102,6 +102,14 @@ function DateRangePicker({closeModal}) {
           },
         });
       } else if (mainDates.startDate && mainDates.endDate === '') {
+        const { data } = await addRequest({
+          variables: {
+            startDate: mainDates.startDate,
+            endDate: mainDates.startDate,
+            requestAuthor: Auth.getProfile().data.username,
+          },
+        });
+      }
     } catch (err) {
       console.error(err);
     }
