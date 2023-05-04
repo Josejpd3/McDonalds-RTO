@@ -5,7 +5,8 @@ export const QUERY_USER = gql`
     user(username: $username) {
       _id
       username
-      email
+      firstName
+      lastName
       role
       requests {
         _id
