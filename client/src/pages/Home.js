@@ -78,7 +78,7 @@ const Home = () => {
         <Header role={user.role}/>
 
         <div className='buttonCotnainer'>
-
+            <button className='create-request-button' onClick={openModal}>Create Request</button>
         </div>
 
         <div className="listContainer">
