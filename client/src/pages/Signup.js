@@ -52,27 +52,42 @@ const Signup = () => {
             ) : (
             <div className="card-body">
               <form onSubmit={handleFormSubmit}>
+                <div className='nameContainer'>
+                  <input
+                    className="form-input control firstName"
+                    placeholder="First Name"
+                    name="firstName"
+                    type="text"
+                    autoComplete='given-name'
+                    value={formState.firstName}
+                    onChange={handleChange}
+                  />
+                  <input
+                    className="form-input control lastName"
+                    placeholder="Last Name"
+                    name="lastName"
+                    type="text"
+                    autoComplete='family-name'
+                    value={formState.lastName}
+                    onChange={handleChange}
+                  />
+                </div>
                 <input
                   className="form-input control"
                   placeholder="Your username"
                   name="username"
                   type="text"
+                  autoComplete='username'
                   value={formState.name}
                   onChange={handleChange}
                 />
-                <input
-                  className="form-input control"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
+
                 <input
                   className="form-input control"
                   placeholder="******"
                   name="password"
                   type="password"
+                  autoComplete='new-password'
                   value={formState.password}
                   onChange={handleChange}
                 />
