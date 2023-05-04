@@ -67,6 +67,23 @@ function DateRangePicker({closeModal}) {
   const handleDateClick = (date) => {
     const { startDate: currentStartDate, endDate: currentEndDate } = selectedDates;
 
+    if (!currentStartDate || (currentStartDate && currentEndDate)) {
+      const startTimestamp = date.getTime();
+      const formattedStartDate = formatTimestamp(startTimestamp);
+      
+      setSelectedDates({ startDate: date, endDate: null });
+      setMainDates({ startDate: formattedStartDate, endDate: null });
+    } else {
+      const newEndDate = date > currentStartDate ? date : currentStartDate;
+      const newStartDate = date < currentStartDate ? date : currentStartDate;
+      // Get the formatted dates and log them
+      const startTimestamp = newStartDate.getTime();
+      const endTimestamp = newEndDate.getTime();
+      const formattedStartDate = formatTimestamp(startTimestamp);
+      const formattedEndDate = formatTimestamp(endTimestamp);
+      setSelectedDates({ startDate: newStartDate, endDate: newEndDate });
+      setMainDates({startDate: formattedStartDate, endDate: formattedEndDate})
+    }
   };
 
   };
