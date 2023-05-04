@@ -162,6 +162,14 @@ function DateRangePicker({closeModal}) {
           ))}
         </div>
         <div className="calendar-grid">
+          {calendarDays.reduce((rows, date, index) => {
+            if (index % 7 === 0) {
+              rows.push([date]);
+            } else {
+              rows[rows.length - 1].push(date);
+            }
+            return rows;
+          }, []).map((row, rowIndex) => (
 
         </div>
 
