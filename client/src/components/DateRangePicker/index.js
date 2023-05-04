@@ -157,6 +157,10 @@ function DateRangePicker({closeModal}) {
           <button className='nextButton' onClick={handleNextMonth}>Next</button>
         </div>
         <div className="weekday-header">
+          {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(weekday => (
+            <div key={weekday}>{weekday}</div>
+          ))}
+        </div>
 
         </div>
 
