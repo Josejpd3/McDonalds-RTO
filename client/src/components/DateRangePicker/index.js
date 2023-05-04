@@ -151,7 +151,9 @@ function DateRangePicker({closeModal}) {
 
     return (
       <div className="calendar">
+        <div className="month-header">
 
+        </div>
       </div>
     );
   };
