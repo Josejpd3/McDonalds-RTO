@@ -177,6 +177,7 @@ function DateRangePicker({closeModal}) {
                 }
 
                 const isBlocked = isBlockedDate(date);
+                const isStartSelected = currentStartDate && date.toLocaleDateString() === currentStartDate.toLocaleDateString();
             </div>
           ))}
         </div>
