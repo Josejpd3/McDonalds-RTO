@@ -171,6 +171,10 @@ function DateRangePicker({closeModal}) {
             return rows;
           }, []).map((row, rowIndex) => (
             <div key={`row-${rowIndex}`} className="calendar-row">
+              {row.map((date, index) => {
+                if (!date) {
+                  return <div key={`blank-${index}`} className="calendar-day"></div>;
+                }
 
             </div>
           ))}
