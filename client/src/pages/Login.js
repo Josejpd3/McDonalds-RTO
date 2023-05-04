@@ -6,7 +6,7 @@ import { LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 const Login = (props) => {
-  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [formState, setFormState] = useState({ username: '', password: '' });
   const [login, { error, data }] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
@@ -35,7 +35,7 @@ const Login = (props) => {
 
     // clear form values
     setFormState({
-      email: '',
+      username: '',
       password: '',
     });
   };
@@ -56,9 +56,10 @@ const Login = (props) => {
                 <input
                   className="form-input control"
                   placeholder="Your username"
-                  name="email"
-                  type="email"
-                  value={formState.email}
+                  name="username"
+                  type="text"
+                  autoComplete='username'
+                  value={formState.username}
                   onChange={handleChange}
                 />
                 <input
@@ -66,6 +67,7 @@ const Login = (props) => {
                   placeholder="******"
                   name="password"
                   type="password"
+                  autoComplete='current-password'
                   value={formState.password}
                   onChange={handleChange}
                 />
