@@ -209,7 +209,7 @@ function DateRangePicker({closeModal}) {
   return (
     <div className="date-range-picker">
       <div className='confirm-container'>
-
+        <div className={`confirm-date ${(selectedDates.startDate ? `selected` : ``)}`}>Start Date <br/>{(selectedDates.startDate ? `${mainDates.startDate}`: '')}</div>
       </div>
     </div>
   );
