@@ -85,6 +85,9 @@ const Home = () => {
                   <div className='requestFormComponent'>
                     <div className='formHeader'>
                       <h3>Request Time Off</h3>
+                      <span className='close' onClick={closeModal}>
+                        &times;
+                      </span>
                     </div>
                   </div>
                 </div>
