@@ -176,6 +176,7 @@ function DateRangePicker({closeModal}) {
                   return <div key={`blank-${index}`} className="calendar-day"></div>;
                 }
 
+                const isBlocked = isBlockedDate(date);
             </div>
           ))}
         </div>
