@@ -93,7 +93,15 @@ function DateRangePicker({closeModal}) {
     event.preventDefault();
   
     try {
- 
+      if (mainDates.startDate && mainDates.endDate) {
+        const { data } = await addRequest({
+          variables: {
+            startDate: mainDates.startDate,
+            endDate: mainDates.endDate,
+            requestAuthor: Auth.getProfile().data.username,
+          },
+        });
+      } else if (mainDates.startDate && mainDates.endDate === '') {
     } catch (err) {
       console.error(err);
     }
