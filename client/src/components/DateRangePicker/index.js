@@ -110,6 +110,8 @@ function DateRangePicker({closeModal}) {
           },
         });
       }
+
+      closeModal();
     } catch (err) {
       console.error(err);
     }
