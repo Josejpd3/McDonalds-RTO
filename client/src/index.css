@@ -624,6 +624,7 @@ button:hover {
 
 div.statusController.requestItem {
   width: 20vw;
+  margin: 5px;
 }
 
 button.approve-button, button.deny-button{
@@ -633,12 +634,11 @@ button.approve-button, button.deny-button{
   min-width: 100px;
   padding: 10px;
   height: 100%;
-  margin: 0vh 1vw;
+  margin: 0.5vh 1vw;
 }
 
 button.approve-button:hover, button.deny-button:hover {
   border-radius: 20px;
-  border: 4px solid #0077cc;
 }
 
 
