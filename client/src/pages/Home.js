@@ -158,17 +158,33 @@ const Home = () => {
         <Header role={user.role}/>
 
         <div className='buttonContainer'>
-            <button onClick={openModal}>Create Request</button>
+            <button className='create-request-button' onClick={openModal}>Create Request</button>
             {showModal && (
               <div className='modal'>
                 <div className='modal-content'>
-                  <span className='close' onClick={closeModal}>
-                    &times;
-                  </span>
-                  <RequestForm/>  
+                  <div className='requestFormComponent'>
+                    <div className='formHeader'>
+                      <h3>Request Time Off</h3>
+                      <span className='close' onClick={closeModal}>
+                        &times;
+                      </span>
+                    </div>
+
+                    {Auth.loggedIn() ? (
+                    <div className='DateRangePickerContainer'>
+                      <p>Select 2 Dates</p>
+                      <DateRangePicker closeModal={closeModal} />
+                    </div>
+                    ) : (
+                      <p>
+                        You need to be logged in to share your requests. Please{' '}
+                        <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
-            )}
+              )}
         </div>
 
         <RequestForm/>
