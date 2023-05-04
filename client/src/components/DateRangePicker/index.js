@@ -170,8 +170,14 @@ function DateRangePicker({closeModal}) {
             }
             return rows;
           }, []).map((row, rowIndex) => (
+            <div key={`row-${rowIndex}`} className="calendar-row">
 
+            </div>
+          ))}
         </div>
+      </div>
+    );
+  };
 
         </div>
       </div>
