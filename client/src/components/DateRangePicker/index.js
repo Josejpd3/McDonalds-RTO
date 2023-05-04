@@ -217,3 +217,5 @@ function DateRangePicker({closeModal}) {
     </div>
   );
 }
+
+export default DateRangePicker;
