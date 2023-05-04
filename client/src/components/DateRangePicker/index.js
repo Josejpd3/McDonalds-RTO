@@ -180,6 +180,7 @@ function DateRangePicker({closeModal}) {
                 const isStartSelected = currentStartDate && date.toLocaleDateString() === currentStartDate.toLocaleDateString();
                 const isEndSelected = currentEndDate && date.toLocaleDateString() === currentEndDate.toLocaleDateString();
                 const isSelected = isStartSelected || isEndSelected;
+                const isSingleDate = (isStartSelected && !isEndSelected) || (!isStartSelected && isEndSelected);
             </div>
           ))}
         </div>
