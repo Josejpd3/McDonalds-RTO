@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import RequestList from '../components/RequestList';
 import Header from '../components/Header';
 
+import DateRangePicker from '../components/DateRangePicker';
 
 import { QUERY_REQUESTS, QUERY_USER, QUERY_ME, } from '../utils/queries';
 
