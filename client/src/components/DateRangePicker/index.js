@@ -148,4 +148,10 @@ function DateRangePicker({closeModal}) {
     for (let i = monthEndWeekday; i < 6; i++) {
       calendarDays.push(null);
     }
+
+    return (
+      <div className="calendar">
+
+      </div>
+    );
   };
