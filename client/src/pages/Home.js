@@ -84,7 +84,7 @@ const Home = () => {
                 <div className='modal-content'>
                   <div className='requestFormComponent'>
                     <div className='formHeader'>
-
+                      <h3>Request Time Off</h3>
                     </div>
                   </div>
                 </div>
