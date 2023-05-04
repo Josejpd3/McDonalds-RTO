@@ -89,6 +89,12 @@ const Home = () => {
                         &times;
                       </span>
                     </div>
+                    {Auth.loggedIn() ? (
+                    <div className='DateRangePickerContainer'>
+                      <p>Select 2 Dates</p>
+                      <DateRangePicker closeModal={closeModal} />
+                    </div>
+                    ) : (
                   </div>
                 </div>
               </div>
