@@ -131,5 +131,6 @@ function DateRangePicker({closeModal}) {
 
   const renderCalendar = () => {
     const { startDate: currentStartDate, endDate: currentEndDate } = selectedDates;
+    const monthDays = getDaysInMonth(month.getFullYear(), month.getMonth());
 
   };
