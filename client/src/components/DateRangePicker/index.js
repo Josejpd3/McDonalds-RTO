@@ -155,6 +155,10 @@ function DateRangePicker({closeModal}) {
           <button className='prevButton' onClick={handlePreviousMonth}>Prev</button>
           <h2>{`${month.toLocaleString('default', { month: 'long' })} ${month.getFullYear()}`}</h2>
           <button className='nextButton' onClick={handleNextMonth}>Next</button>
+        </div>
+        <div className="weekday-header">
+
+        </div>
 
         </div>
       </div>
