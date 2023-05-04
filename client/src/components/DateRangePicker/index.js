@@ -64,5 +64,9 @@ function DateRangePicker({closeModal}) {
     return `${month}/${day}/${year}`;
   }
 
+  const handleDateClick = (date) => {
+
+  };
+
   };
 
