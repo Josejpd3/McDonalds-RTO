@@ -187,6 +187,8 @@ function DateRangePicker({closeModal}) {
                   date > currentStartDate &&
                   date < currentEndDate &&
                   !isBlocked;
+                const isCurrentDay = date.toDateString() === new Date().toDateString(); //check if the date is the current day
+
             </div>
           ))}
         </div>
