@@ -82,7 +82,9 @@ const Home = () => {
             {showModal && (
               <div className='modal'>
                 <div className='modal-content'>
+                  <div className='requestFormComponent'>
 
+                  </div>
                 </div>
               </div>
             )}
