@@ -181,6 +181,12 @@ function DateRangePicker({closeModal}) {
                 const isEndSelected = currentEndDate && date.toLocaleDateString() === currentEndDate.toLocaleDateString();
                 const isSelected = isStartSelected || isEndSelected;
                 const isSingleDate = (isStartSelected && !isEndSelected) || (!isStartSelected && isEndSelected);
+                const isInRange =
+                  currentStartDate &&
+                  currentEndDate &&
+                  date > currentStartDate &&
+                  date < currentEndDate &&
+                  !isBlocked;
             </div>
           ))}
         </div>
