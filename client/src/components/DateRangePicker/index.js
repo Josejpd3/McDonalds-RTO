@@ -161,6 +161,7 @@ function DateRangePicker({closeModal}) {
             <div key={weekday}>{weekday}</div>
           ))}
         </div>
+        <div className="calendar-grid">
 
         </div>
 
