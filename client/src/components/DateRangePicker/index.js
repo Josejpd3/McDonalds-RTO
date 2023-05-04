@@ -189,6 +189,16 @@ function DateRangePicker({closeModal}) {
                   !isBlocked;
                 const isCurrentDay = date.toDateString() === new Date().toDateString(); //check if the date is the current day
 
+                return (
+                  <div
+                      key={date.toISOString()}
+                      className={`calendar-day${isBlocked ? ' blocked' : ''}${isSelected ? ' selected' : ''}${isInRange ? ' in-range' : ''}${isCurrentDay ? ' current-day' : ''}`}
+                      onClick={() => !isBlocked && handleDateClick(date)}
+                    >
+                      {date.getDate()}
+                  </div>
+                );
+              })}
             </div>
           ))}
         </div>
