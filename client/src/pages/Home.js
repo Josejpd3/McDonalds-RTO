@@ -79,6 +79,11 @@ const Home = () => {
 
         <div className='buttonCotnainer'>
             <button className='create-request-button' onClick={openModal}>Create Request</button>
+            {showModal && (
+              <div className='modal'>
+
+              </div>
+            )}
         </div>
 
         <div className="listContainer">
