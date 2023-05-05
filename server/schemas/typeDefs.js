@@ -55,6 +55,7 @@ const typeDefs = gql`
     addComment(requestId: ID!, commentText: String!): Request
     removeRequest(requestId: ID!): Request
     removeComment(requestId: ID!, commentId: ID!): Request
+    blockDate(date: String!): BlockedDate
   }
 `;
 
