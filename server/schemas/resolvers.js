@@ -56,7 +56,7 @@ const resolvers = {
         const request = await Request.create({
           startDate,
           endDate,
-          requestAuthor: context.user.username,
+          requestAuthor: `${context.user.firstName} ${context.user.lastName}`,
         });
 
         await User.findOneAndUpdate(
