@@ -86,6 +86,15 @@ const resolvers = {
         })
       }
     },
+    removeBlockedDate: async (parent, {blockedDateId}, context) => {
+      if (context.user) {
+        const blockedDate = await BlockedDate.findOneAndDelete({
+          _id: blockedDateId
+        });
+
+        return blockedDate;
+      }
+    },
     addComment: async (parent, { requestId, commentText }, context) => {
       if (context.user) {
         return Request.findOneAndUpdate(
