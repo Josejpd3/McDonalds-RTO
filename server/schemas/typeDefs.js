@@ -21,6 +21,11 @@ const typeDefs = gql`
     comments: [Comment]!
   }
 
+  type BlockedDate {
+    _id: ID
+    date: String
+  }
+
   type Comment {
     _id: ID
     commentText: String
