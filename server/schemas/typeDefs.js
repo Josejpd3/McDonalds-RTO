@@ -44,6 +44,7 @@ const typeDefs = gql`
     requests(username: String): [Request]
     request(requestId: ID!): Request
     me: User
+    blockedDates: [BlockedDate]
   }
 
   type Mutation {
