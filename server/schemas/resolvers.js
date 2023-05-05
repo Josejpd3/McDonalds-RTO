@@ -79,6 +79,13 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    blockDate: async (parent, {date}, context) => {
+      if(context.user) {
+        return BlockedDate.create({
+          date,
+        })
+      }
+    },
     addComment: async (parent, { requestId, commentText }, context) => {
       if (context.user) {
         return Request.findOneAndUpdate(
