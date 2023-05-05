@@ -13,3 +13,5 @@ const blockedDateSchema = new Schema({
     required: "You need to choose a date",
   }
 });
+
+const BlockedDate = model('BlockedDate', blockedDateSchema);
