@@ -15,3 +15,5 @@ const blockedDateSchema = new Schema({
 });
 
 const BlockedDate = model('BlockedDate', blockedDateSchema);
+
+module.exports = BlockedDate;
