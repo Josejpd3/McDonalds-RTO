@@ -21,5 +21,9 @@ function DateBlocker() {
     const [removeBlockedDate] = useMutation(REMOVE_BLOCKED_DATE);
 
     const handleDelete = async (blockedDateId) => {
+        try {
 
+        } catch (error) {
+          console.error(error);
+        }
       };
