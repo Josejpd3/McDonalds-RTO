@@ -7,5 +7,6 @@ import { QUERY_BLOCKED_DATES } from '../../utils/queries';
 
 function DateBlocker() {
     const [date, setDate] = useState('');
+    const { loading, error, data } = useQuery(QUERY_BLOCKED_DATES);
 
   }
