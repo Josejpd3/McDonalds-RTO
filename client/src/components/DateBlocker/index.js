@@ -23,6 +23,7 @@ function DateBlocker() {
     const handleDelete = async (blockedDateId) => {
         try {
           await removeBlockedDate({ variables: { blockedDateId } });
+          window.location.reload();
         } catch (error) {
           console.error(error);
         }
