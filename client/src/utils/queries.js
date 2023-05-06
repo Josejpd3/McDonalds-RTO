@@ -70,3 +70,13 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+
+export const QUERY_BLOCKED_DATES = gql`
+  query getBlockedDates {
+    blockedDates {
+      _id
+      date
+    }
+  }
+`;
