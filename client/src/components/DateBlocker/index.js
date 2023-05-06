@@ -30,5 +30,6 @@ function DateBlocker() {
       };
   
       const handleSubmit = async (e) => {
+        e.preventDefault();
 
       };
