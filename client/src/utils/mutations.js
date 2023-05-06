@@ -102,3 +102,11 @@ export const BLOCK_DATE = gql`
   }
 `;
 
+export const REMOVE_BLOCKED_DATE = gql`
+  mutation removeBlockedDate($blockedDateId: ID!) {
+    removeBlockedDate(blockedDateId: $blockedDateId) {
+      _id
+      date
+    }
+  }
+`;
