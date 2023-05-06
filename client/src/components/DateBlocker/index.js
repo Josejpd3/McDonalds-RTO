@@ -8,5 +8,14 @@ import { QUERY_BLOCKED_DATES } from '../../utils/queries';
 function DateBlocker() {
     const [date, setDate] = useState('');
     const { loading, error, data } = useQuery(QUERY_BLOCKED_DATES);
+    const [blockDate] = useMutation(BLOCK_DATE, {
+      update(cache, { data: { blockDate } }) {
+        const { blockedDates } = cache.readQuery({ query: QUERY_BLOCKED_DATES });
+        cache.writeQuery({
+          query: QUERY_BLOCKED_DATES,
+          data: { blockedDates: blockedDates.concat([blockDate]) }
+        });
+      }
+    });
 
   }
