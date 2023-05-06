@@ -92,3 +92,13 @@ export const REMOVE_REQUEST = gql`
     }
   }
 `;
+
+export const BLOCK_DATE = gql`
+  mutation blockDate($date: String!) {
+    blockDate(date: $date) {
+      _id
+      date
+    }
+  }
+`;
+
