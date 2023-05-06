@@ -18,4 +18,4 @@ function DateBlocker() {
       }
     });
 
-  }
+    const [removeBlockedDate] = useMutation(REMOVE_BLOCKED_DATE);
