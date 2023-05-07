@@ -67,3 +67,4 @@ function DateBlocker() {
     );
   }
 
+export default DateBlocker;
