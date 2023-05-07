@@ -34,6 +34,7 @@ function DateBlocker() {
         try {
           const dateObject = new Date(date);
           const timezoneOffset = dateObject.getTimezoneOffset() * 60 * 1000;
+          const utcDate = dateObject.getTime() + timezoneOffset;
         } catch (err) {
           console.error(err);
         }
