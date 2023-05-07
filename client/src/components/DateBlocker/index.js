@@ -55,6 +55,7 @@ function DateBlocker() {
             value={date}
             onChange={(e) => setDate(e.target.value)}
           />
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
