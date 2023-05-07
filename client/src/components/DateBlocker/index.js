@@ -60,6 +60,7 @@ function DateBlocker() {
         {data.blockedDates.map(blockedDate => (
           <div key={blockedDate._id} className='blockedDates'>
             <span>{blockedDate.date}</span>
+            <button onClick={() => handleDelete(blockedDate._id)}>Remove</button>
           </div>
         ))}
       </div>
