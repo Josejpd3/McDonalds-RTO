@@ -49,7 +49,9 @@ function DateBlocker() {
    
     return (
       <div className='dateBlocker'>
+        <form onSubmit={handleSubmit}>
 
+        </form>
       </div>
     );
   }
