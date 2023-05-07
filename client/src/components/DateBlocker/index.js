@@ -33,6 +33,7 @@ function DateBlocker() {
         e.preventDefault();
         try {
           const dateObject = new Date(date);
+          const timezoneOffset = dateObject.getTimezoneOffset() * 60 * 1000;
         } catch (err) {
           console.error(err);
         }
