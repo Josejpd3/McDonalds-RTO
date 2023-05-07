@@ -32,7 +32,7 @@ function DateBlocker() {
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-
+          const dateObject = new Date(date);
         } catch (err) {
           console.error(err);
         }
