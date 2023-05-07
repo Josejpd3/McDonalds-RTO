@@ -50,7 +50,11 @@ function DateBlocker() {
     return (
       <div className='dateBlocker'>
         <form onSubmit={handleSubmit}>
-
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
         </form>
       </div>
     );
