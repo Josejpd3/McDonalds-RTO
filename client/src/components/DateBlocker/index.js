@@ -42,3 +42,8 @@ function DateBlocker() {
           console.error(err);
         }
       };
+
+  
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error</p>;
+  
