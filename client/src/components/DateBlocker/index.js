@@ -59,7 +59,7 @@ function DateBlocker() {
         </form>
         {data.blockedDates.map(blockedDate => (
           <div key={blockedDate._id} className='blockedDates'>
-
+            <span>{blockedDate.date}</span>
           </div>
         ))}
       </div>
