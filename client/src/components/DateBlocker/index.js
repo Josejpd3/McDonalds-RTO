@@ -57,6 +57,11 @@ function DateBlocker() {
           />
           <button type="submit">Submit</button>
         </form>
+        {data.blockedDates.map(blockedDate => (
+          <div key={blockedDate._id} className='blockedDates'>
+
+          </div>
+        ))}
       </div>
     );
   }
