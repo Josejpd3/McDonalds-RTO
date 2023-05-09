@@ -38,6 +38,7 @@ const Home = () => {
   const user = data?.me || data?.user || {};
 
   const [showModal, setShowModal] = useState(false);
+  const [showModalBlockDates, setShowModalBlockDates] = useState(false);
 
   function openModal() {
     setShowModal(true);
