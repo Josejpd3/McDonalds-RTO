@@ -52,6 +52,11 @@ const RequestList = ({
                     <StatusController requestId={request._id} status={request.requestStatus}/>
                   </div>
                 ) : (
+                  <div style={{display: "none"}}>your status will update soon</div>
+                )}
+                <div className="request-date-container requestItem">
+
+                </div>
               </div>
           ))}
         </div>
