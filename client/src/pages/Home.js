@@ -93,7 +93,9 @@ const Home = () => {
             <div className='modal dateBlockerModal'>
               <div className='modal-content'>
                 <div className='requestFormComponent'>
+                  <div className='formHeader'>
 
+                  </div>
                 </div>
               </div>
             </div>
