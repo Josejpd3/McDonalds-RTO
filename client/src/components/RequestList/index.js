@@ -36,9 +36,7 @@ const RequestList = ({
       {showTitle && <h3>{title}</h3>}
       {requests.length === 0 ? (
         <div className="no-request-container">
-
-        </div>
-      ) : (
+          <h3>No Requests</h3>
 
             {showUsername ? (
               <Link to={`/profiles/${request.requestAuthor}`}>
