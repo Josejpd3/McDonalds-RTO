@@ -46,7 +46,7 @@ function DateBlocker() {
       };
 
   
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <LoadingSpinner/>
     if (error) return <p>Error</p>;
    
     return (
