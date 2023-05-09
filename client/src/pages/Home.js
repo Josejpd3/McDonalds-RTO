@@ -95,6 +95,9 @@ const Home = () => {
                 <div className='requestFormComponent'>
                   <div className='formHeader'>
                     <h3>Blocked Dates</h3>
+                    <span className='close' onClick={closeModalBlockDates}>
+                      &times;
+                    </span>
                   </div>
                 </div>
               </div>
