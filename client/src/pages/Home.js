@@ -88,7 +88,7 @@ const Home = () => {
       <div className='HomeContainer'>
         <Header role={user.role}/>
         <div className='buttonContainer dateBlockContainer'>
-
+          <button className='block-date-button' onClick={openModalBlockDates}>Block Dates</button>
         </div>
 
         <div className='buttonContainer'>
