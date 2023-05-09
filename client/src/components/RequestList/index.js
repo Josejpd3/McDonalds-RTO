@@ -55,7 +55,7 @@ const RequestList = ({
                   <div style={{display: "none"}}>your status will update soon</div>
                 )}
                 <div className="request-date-container requestItem">
-
+                  <p>Request</p>
                 </div>
               </div>
           ))}
