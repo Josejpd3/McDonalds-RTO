@@ -89,6 +89,11 @@ const Home = () => {
         <Header role={user.role}/>
         <div className='buttonContainer dateBlockContainer'>
           <button className='block-date-button' onClick={openModalBlockDates}>Block Dates</button>
+          {showModalBlockDates && (
+            <div className='modal dateBlockerModal'>
+
+            </div>
+          )}
         </div>
 
         <div className='buttonContainer'>
