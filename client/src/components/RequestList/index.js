@@ -58,6 +58,9 @@ const RequestList = ({
                   <p>Request</p>
                   <p>{request.startDate} - {request.endDate}</p>
                 </div>
+                <div className="status-container requestItem">
+
+                </div>
               </div>
           ))}
         </div>
