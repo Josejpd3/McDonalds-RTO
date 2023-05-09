@@ -91,7 +91,9 @@ const Home = () => {
           <button className='block-date-button' onClick={openModalBlockDates}>Block Dates</button>
           {showModalBlockDates && (
             <div className='modal dateBlockerModal'>
+              <div className='modal-content'>
 
+              </div>
             </div>
           )}
         </div>
