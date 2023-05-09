@@ -32,6 +32,9 @@ function DateRangePicker({closeModal}) {
   });
 
   const { data: blockedDatesData } = useQuery(QUERY_BLOCKED_DATES);
+  const allBlockedDates = blockedDatesData?.blockedDates || [];
+
+  
   const [month, setMonth] = useState(new Date());
   const [selectedDates, setSelectedDates] = useState({ startDate: null, endDate: null });
   const [mainDates, setMainDates]= useState({ startDate: '', endDate: ''})
