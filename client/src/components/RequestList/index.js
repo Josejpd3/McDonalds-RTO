@@ -81,7 +81,7 @@ const RequestList = ({
                   </>
                 )}
                 <div className="delete-button-container requestItem">
-
+                  <button className="deleteBtn" onClick={() => {handleDelete(request._id);}}>Delete</button>
                 </div>
               </div>
           ))}
