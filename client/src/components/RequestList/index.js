@@ -38,29 +38,13 @@ const RequestList = ({
         <div className="no-request-container">
           <h3>No Requests</h3>
           <img src={light_house_illustration} alt="lighthouse-illustration"/>
+        </div>
+      ) : (
+        <div className="requestContainer">
 
-            {showUsername ? (
-              <Link to={`/profiles/${request.requestAuthor}`}>
-                {request.requestAuthor} <br />
-                <div className="created-date-container requestItem" style={{ fontSize: "1rem" }}>
-                  <p>Created On</p>
-                  {request.createdAt}
-                </div>
-              </Link>
-            ) : (
-              
-              <>
-                <div className="created-date-container requestItem" style={{ fontSize: "1rem" }}>
-                  <p>Created On</p>
-                  {request.createdAt}
-                </div>
-              </>
-            )}
-            <div className="delete-button-container requestItem">
-              <button className="deleteBtn" onClick={() => {handleDelete(request._id);}}>Delete</button>
-            </div>
-          </div>
-        ))}
+        </div>
+      )}
+
     </div>
   );
 };
