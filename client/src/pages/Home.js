@@ -48,6 +48,10 @@ const Home = () => {
     setShowModal(false);
   }
 
+  function openModalBlockDates() {
+    setShowModalBlockDates(true);
+  }
+
   const tabSession = sessionStorage.getItem('tab');
   const selectedTab = !tabSession ? 'pending' : tabSession;
 
