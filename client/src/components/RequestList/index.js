@@ -47,6 +47,11 @@ const RequestList = ({
                 <div className="view-button-container requestItem">
                   <Link to={`/requests/${request._id}`}>View Request</Link>
                 </div>
+                {role === 'manager' ? (
+                  <div className="statusController requestItem">
+                    <StatusController requestId={request._id} status={request.requestStatus}/>
+                  </div>
+                ) : (
               </div>
           ))}
         </div>
