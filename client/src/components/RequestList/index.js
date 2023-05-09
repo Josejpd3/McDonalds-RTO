@@ -41,7 +41,12 @@ const RequestList = ({
         </div>
       ) : (
         <div className="requestContainer">
+          {requests &&
+            requests.map((request) => (
+              <div key={request._id} className="request">
 
+              </div>
+          ))}
         </div>
       )}
 
