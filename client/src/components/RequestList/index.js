@@ -34,27 +34,11 @@ const RequestList = ({
   return (
     <div className="requestListComponent">
       {showTitle && <h3>{title}</h3>}
-      {requests &&
-        requests.map((request) => (
-          <div key={request._id} className="request">
-            <div className="view-button-container requestItem">
-              <Link to={`/requests/${request._id}`}>View Request</Link>
-            </div>
-            {role === 'manager' ? (
-              <div className="statusController requestItem">
-                <StatusController requestId={request._id} status={request.requestStatus}/>
-              </div>
-            ) : (
-              <div style={{display: "none"}}>your status will update soon</div>
-            )}
-            <div className="request-date-container requestItem">
-              <p>Request</p>
-              <p>{request.startDate} - {request.endDate}</p>
-            </div>
-            <div className="status-container requestItem">
-              <p>Status</p>
-              <p className={request.requestStatus}>{request.requestStatus}</p>
-            </div>
+      {requests.length === 0 ? (
+        <div className="no-request-container">
+
+        </div>
+      ) : (
 
             {showUsername ? (
               <Link to={`/profiles/${request.requestAuthor}`}>
