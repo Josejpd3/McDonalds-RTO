@@ -38,6 +38,7 @@ function DateRangePicker({closeModal}) {
 const blockedDates = allBlockedDates.map((date) => {
   return { date: date.date };
 });
+
   const [month, setMonth] = useState(new Date());
   const [selectedDates, setSelectedDates] = useState({ startDate: null, endDate: null });
   const [mainDates, setMainDates]= useState({ startDate: '', endDate: ''})
@@ -49,7 +50,12 @@ const blockedDates = allBlockedDates.map((date) => {
   
     return (
       new Date(formattedDate) < today ||
-      blockedDates.some(blockedDate => blockedDate.date === formattedDate) ||
+      blockedDates.some((blockedDate) => {
+        return (
+          blockedDate.date === formattedDate ||
+          new Date(blockedDate.date).getTime() === date.getTime()
+        );
+      }) ||
       new Date(formattedDate) <= twoWeeksFromNow
     );
   };
