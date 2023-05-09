@@ -101,7 +101,7 @@ const Home = () => {
                   </div>
                   {Auth.loggedIn() ? (
                   <div className='DateRangePickerContainer'>
-
+                    <p>Block Date</p>
                   </div>
                   ) : (
                     <p>
