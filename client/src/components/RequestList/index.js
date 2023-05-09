@@ -60,6 +60,7 @@ const RequestList = ({
                 </div>
                 <div className="status-container requestItem">
                   <p>Status</p>
+                  <p className={request.requestStatus}>{request.requestStatus}</p>
                 </div>
               </div>
           ))}
