@@ -119,7 +119,7 @@ const Home = () => {
 
         <div className="listContainer">
           {loadingAll ? (
-            <div>Loading...</div>
+            <LoadingSpinner/>
           ) : (
           <div className='tab-container'>
             <div className="tabs">
