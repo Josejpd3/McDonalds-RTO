@@ -62,6 +62,24 @@ const RequestList = ({
                   <p>Status</p>
                   <p className={request.requestStatus}>{request.requestStatus}</p>
                 </div>
+
+                {showUsername ? (
+                  <Link to={`/profiles/${request.requestAuthor}`}>
+                    {request.requestAuthor} <br />
+                    <div className="created-date-container requestItem" style={{ fontSize: "1rem" }}>
+                      <p>Created On</p>
+                      {request.createdAt}
+                    </div>
+                  </Link>
+                ) : (
+                  
+                  <>
+                    <div className="created-date-container requestItem" style={{ fontSize: "1rem" }}>
+                      <p>Created On</p>
+                      {request.createdAt}
+                    </div>
+                  </>
+                )}
               </div>
           ))}
         </div>
