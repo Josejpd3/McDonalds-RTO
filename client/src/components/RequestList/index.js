@@ -80,6 +80,9 @@ const RequestList = ({
                     </div>
                   </>
                 )}
+                <div className="delete-button-container requestItem">
+
+                </div>
               </div>
           ))}
         </div>
