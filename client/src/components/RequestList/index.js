@@ -37,6 +37,7 @@ const RequestList = ({
       {requests.length === 0 ? (
         <div className="no-request-container">
           <h3>No Requests</h3>
+          <img src={light_house_illustration} alt="lighthouse-illustration"/>
 
             {showUsername ? (
               <Link to={`/profiles/${request.requestAuthor}`}>
