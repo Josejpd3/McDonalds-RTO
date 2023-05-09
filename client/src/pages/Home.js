@@ -94,7 +94,7 @@ const Home = () => {
               <div className='modal-content'>
                 <div className='requestFormComponent'>
                   <div className='formHeader'>
-
+                    <h3>Blocked Dates</h3>
                   </div>
                 </div>
               </div>
