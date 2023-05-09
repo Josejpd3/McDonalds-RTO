@@ -207,7 +207,7 @@ const Home = () => {
         {!userParam && (
           <div
             className="divider"
-            style={{ border: '1px dotted #1a1a1a' }}
+            style={{ border: '1px dotted #1a1a1a', display: 'none'}}
           >
           </div>
         )}
