@@ -92,7 +92,9 @@ const Home = () => {
           {showModalBlockDates && (
             <div className='modal dateBlockerModal'>
               <div className='modal-content'>
+                <div className='requestFormComponent'>
 
+                </div>
               </div>
             </div>
           )}
