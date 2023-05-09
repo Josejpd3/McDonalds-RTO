@@ -99,6 +99,16 @@ const Home = () => {
                       &times;
                     </span>
                   </div>
+                  {Auth.loggedIn() ? (
+                  <div className='DateRangePickerContainer'>
+
+                  </div>
+                  ) : (
+                    <p>
+                      You need to be logged in to share your requests. Please{' '}
+                      <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
