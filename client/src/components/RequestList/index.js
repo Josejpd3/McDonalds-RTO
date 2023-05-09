@@ -44,7 +44,9 @@ const RequestList = ({
           {requests &&
             requests.map((request) => (
               <div key={request._id} className="request">
-
+                <div className="view-button-container requestItem">
+                  <Link to={`/requests/${request._id}`}>View Request</Link>
+                </div>
               </div>
           ))}
         </div>
