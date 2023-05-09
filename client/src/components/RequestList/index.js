@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import light_house_illustration from './light_house_no-requests.svg'
 
 import { useMutation } from '@apollo/client';
 import { REMOVE_REQUEST } from "../../utils/mutations";
