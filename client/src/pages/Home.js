@@ -102,6 +102,7 @@ const Home = () => {
                   {Auth.loggedIn() ? (
                   <div className='DateRangePickerContainer'>
                     <p>Block Date</p>
+                    <DateBlocker closeModal={closeModal} />
                   </div>
                   ) : (
                     <p>
