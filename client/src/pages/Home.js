@@ -85,7 +85,7 @@ const Home = () => {
 
   if(user.role === 'manager') {
     return (
-      <div>
+      <div className='HomeContainer'>
         <Header role={user.role}/>
 
         <div className='buttonContainer'>
