@@ -27,7 +27,10 @@ const ResetPassword = () => {
     <div className="reset-password-container">
       <a className='go-back' href='/login'>&#10132;</a>
         <form className="reset-password-form" onSubmit={handleSubmit}>
-
+          <label className="reset-password-label">
+            Employee ID:
+            <input className="reset-password-input" type="text" name="username" value={username} onChange={(e) => setUsername(e.target.value)} autoComplete="username" />
+          </label>
         </form>
     </div>
   );
