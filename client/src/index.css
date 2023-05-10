@@ -470,8 +470,18 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0px 0px;
   max-width: 100%;
+}
+
+.requestContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px;
+  width: 100%;
 }
 
 .request {
