@@ -40,22 +40,11 @@ function App() {
         <div>
           <div className="container">
             <Routes>
-              <Route 
-                path="/"
-                element={<Home />}
-              />
-              <Route 
-                path="/login"
-                element={<Login />}
-              />
-              <Route 
-                path="/signup"
-                element={<Signup />}
-              />
-              <Route 
-                path="/requests/:requestId"
-                element={<SingleRequest />}
-              />
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/resetpassword" element={<ResetPassword />} />
+              <Route path="/requests/:requestId" element={<SingleRequest />} />
             </Routes>
           </div>
         </div>
