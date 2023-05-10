@@ -346,6 +346,15 @@ button:hover {
   display: flex;
 }
 
+.reset-button {
+  display: block;
+  width: 100%;
+  display: flex;
+  margin-top: -10px;
+  margin-left: 30px;
+  color: var(--background-dark);
+}
+
 .welcome-card {
   background: var(--primary-color);
 }
