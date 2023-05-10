@@ -43,6 +43,8 @@ const ResetPassword = () => {
             New Password:
             <input className="reset-password-input" type="password" name="newPassword" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} autoComplete="new-password" />
           </label>
+          {error && <div className="reset-password-error">{error.message}</div>}
+          <button className="reset-password-button" type="submit">Reset Password</button>
         </form>
     </div>
   );
