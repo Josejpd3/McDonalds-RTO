@@ -71,6 +71,9 @@ const Login = (props) => {
                   value={formState.password}
                   onChange={handleChange}
                 />
+                <div className='resetContainer'>
+
+                </div>
                 <button className="control" type="submit">
                   Login
                 </button>
