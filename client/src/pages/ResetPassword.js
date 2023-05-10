@@ -11,4 +11,6 @@ const ResetPassword = () => {
   const [success, setSuccess] = useState(false);
   const [resetPassword, { error }] = useMutation(RESET_PASSWORD);
 
-};
+  const handleSubmit = async (e) => {
+
+  };
