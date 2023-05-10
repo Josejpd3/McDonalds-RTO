@@ -276,6 +276,19 @@ form {
   flex-direction: column;
 }
 
+.nameContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.nameContainer .form-input.firstName {
+  margin-right: 10px;
+}
+
+.nameContainer .form-input.lastName {
+  margin-left: 10px;
+}
+
 hr {
   margin-bottom: 20px;
   margin-top: 10px;
