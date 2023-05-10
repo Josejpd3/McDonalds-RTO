@@ -12,5 +12,6 @@ const ResetPassword = () => {
   const [resetPassword, { error }] = useMutation(RESET_PASSWORD);
 
   const handleSubmit = async (e) => {
+    e.preventDefault();
 
   };
