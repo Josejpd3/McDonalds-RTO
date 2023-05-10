@@ -39,6 +39,10 @@ const ResetPassword = () => {
             Last Name:
             <input className="reset-password-input" type="text" name="lastName" value={lastName} onChange={(e) => setLastName(e.target.value)} autoComplete="family-name" />
           </label>
+          <label className="reset-password-label">
+            New Password:
+            <input className="reset-password-input" type="password" name="newPassword" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} autoComplete="new-password" />
+          </label>
         </form>
     </div>
   );
