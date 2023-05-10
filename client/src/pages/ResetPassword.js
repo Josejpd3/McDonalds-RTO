@@ -26,6 +26,12 @@ const ResetPassword = () => {
   return (
     <div className="reset-password-container">
       <a className='go-back' href='/login'>&#10132;</a>
+      {success ? (
+        <div className="confirmation">
+          <div className='confirmation-icon'></div>
+          Password reset successful. <a href="/login">Click here to log in.</a>
+        </div>
+      ) : (
         <form className="reset-password-form" onSubmit={handleSubmit}>
           <label className="reset-password-label">
             Employee ID:
@@ -46,5 +52,6 @@ const ResetPassword = () => {
           {error && <div className="reset-password-error">{error.message}</div>}
           <button className="reset-password-button" type="submit">Reset Password</button>
         </form>
+      )}
     </div>
   );
