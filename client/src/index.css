@@ -496,6 +496,13 @@ button:hover {
   z-index: -10;
 }
 
+.no-request-container img {
+  position: relative;
+  top: 5px;
+  width: 400px;
+  z-index: -10;
+}
+
 .request {
   background-color: var(--background-light-secondary);
   border-radius: 10px;
