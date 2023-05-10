@@ -55,7 +55,7 @@ const Login = (props) => {
               <form onSubmit={handleFormSubmit}>
                 <input
                   className="form-input control"
-                  placeholder="Your username"
+                  placeholder="Employee ID"
                   name="username"
                   type="text"
                   autoComplete='username'
