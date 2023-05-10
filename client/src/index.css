@@ -341,6 +341,11 @@ button:hover {
   background: #66b3ff;
 }
 
+.resetContainer {
+  width: 100%;
+  display: flex;
+}
+
 .welcome-card {
   background: var(--primary-color);
 }
