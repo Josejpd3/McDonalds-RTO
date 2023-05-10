@@ -484,6 +484,18 @@ button:hover {
   width: 100%;
 }
 
+.no-request-container {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--primary-color);
+  z-index: -10;
+}
+
 .request {
   background-color: var(--background-light-secondary);
   border-radius: 10px;
