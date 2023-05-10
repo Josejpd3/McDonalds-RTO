@@ -4,5 +4,6 @@ import { RESET_PASSWORD } from '../utils/mutations';
 
 
 const ResetPassword = () => {
+  const [username, setUsername] = useState('');
 
 };
