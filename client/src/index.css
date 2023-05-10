@@ -401,8 +401,16 @@ button:hover {
     flex-direction: column;
   }
 
+  .control {
+    font-size: 4.8vw;
+  }
+
   .welcome-card {
     display: none;
+  }
+
+  .card.signup-card {
+    overflow: scroll;
   }
 }
 
