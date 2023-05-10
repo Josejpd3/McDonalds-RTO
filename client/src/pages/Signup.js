@@ -75,7 +75,7 @@ const Signup = () => {
                 </div>
                 <input
                   className="form-input control"
-                  placeholder="Your username"
+                  placeholder="Employee ID"
                   name="username"
                   type="text"
                   autoComplete='username'
