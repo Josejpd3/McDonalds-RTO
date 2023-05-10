@@ -26,5 +26,8 @@ const ResetPassword = () => {
   return (
     <div className="reset-password-container">
       <a className='go-back' href='/login'>&#10132;</a>
+        <form className="reset-password-form" onSubmit={handleSubmit}>
+
+        </form>
     </div>
   );
