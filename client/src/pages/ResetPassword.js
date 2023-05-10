@@ -7,5 +7,6 @@ const ResetPassword = () => {
   const [username, setUsername] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+  const [newPassword, setNewPassword] = useState('');
 
 };
