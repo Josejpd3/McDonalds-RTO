@@ -22,3 +22,9 @@ const ResetPassword = () => {
       console.log(err);
     }
   };
+
+  return (
+    <div className="reset-password-container">
+
+    </div>
+  );
