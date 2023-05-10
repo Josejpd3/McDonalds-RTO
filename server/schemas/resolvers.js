@@ -51,6 +51,20 @@ const resolvers = {
 
       return { token, user };
     },
+    resetPassword: async (parent, { username, firstName, lastName, newPassword }) => {
+      const user = await User.findOne({ username, firstName, lastName });
+
+      if (!user) {
+        throw new AuthenticationError('User not found');
+      }
+
+      user.password = newPassword;
+      await user.save();
+
+      const token = signToken(user);
+
+      return { token, user };
+    },
     addRequest: async ( parent, { startDate, endDate, requestStatus }, context) => {
       if (context.user) {
         const request = await Request.create({
