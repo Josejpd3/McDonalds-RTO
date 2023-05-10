@@ -72,7 +72,7 @@ const Login = (props) => {
                   onChange={handleChange}
                 />
                 <div className='resetContainer'>
-
+                  <a className='reset-button' href="/resetpassword">Forgot Password?</a>
                 </div>
                 <button className="control" type="submit">
                   Login
