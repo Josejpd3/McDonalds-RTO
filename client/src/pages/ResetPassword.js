@@ -14,7 +14,9 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-
+      await resetPassword({
+        variables: { username, firstName, lastName, newPassword },
+      });
     } catch (err) {
       console.log(err);
     }
