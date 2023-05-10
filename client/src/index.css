@@ -429,8 +429,20 @@ button:hover {
   }
   
   h4.signup-title {
-    padding-top: 18vh;
+    padding-top: 10vh;
   }
+
+  .nameContainer {
+    flex-direction: column;
+  }
+
+  .nameContainer .form-input.firstName {
+  margin-right: 0px;
+}
+
+.nameContainer .form-input.lastName {
+  margin-left: 0px;
+}
 
 }
 
