@@ -24,6 +24,18 @@ export const ADD_USER = gql`
   }
 `;
 
+export const RESET_PASSWORD = gql`
+  mutation resetPassword($username: String!, $firstName: String!, $lastName: String!, $newPassword: String!) {
+    resetPassword(username: $username, firstName: $firstName, lastName: $lastName, newPassword: $newPassword) {
+      token
+      user {
+        _id
+        username
+      }
+    }
+  }
+`;
+
 export const ADD_REQUEST = gql`
   mutation addRequest($startDate: String!, $endDate: String) {
     addRequest(startDate: $startDate, endDate: $endDate) {
