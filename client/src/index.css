@@ -2,23 +2,24 @@
 :root {
   --primary-color: #0077cc;
   --secondary-color: #66b3ff;
-  --background-light: #f3eaea;
-  --background-light-secondary: #fff;
-  --background-dark: #5d5c5c;
-  --background-dark-secondary: #2a2929;
+  --background-light: #fff;
+  --background-light-secondary: #ddd;
+  --background-dark: #333;
+  --background-dark-secondary: #c5c4c4;
   --primary-dark-hover: #0077cc;
-  --secondary-hover: #007bff;
+  --secondary-hover: #0062a2;
   --primary-light-hover: #66b3ff;
   --secondary-light-hover: #fff;
-  --font-color: #333333;
+  --blocked-color: #8b8b8bb5;
+  --range-color: #98b8e45e;
+  --danger-color: #cc0000;
+  --danger-color-hover: #a30000;
+  --font-color: #333;
   --font-family: "Helvetica Neue", sans-serif;
   --font-size: 16px;
   --line-height: 1.5;
   --border-radius: 4px;
   --max-width: 1200px;
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 24px;
 }
 
 /* Global Reset */
