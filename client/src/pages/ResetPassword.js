@@ -17,6 +17,7 @@ const ResetPassword = () => {
       await resetPassword({
         variables: { username, firstName, lastName, newPassword },
       });
+      setSuccess(true);
     } catch (err) {
       console.log(err);
     }
