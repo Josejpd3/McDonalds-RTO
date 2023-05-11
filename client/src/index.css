@@ -850,3 +850,7 @@ button.prevButton:hover, button.nextButton:hover {
   margin: 0px;
 }
 
+.calendar-day:hover {
+  background-color: var(--background-light-secondary);
+}
+
