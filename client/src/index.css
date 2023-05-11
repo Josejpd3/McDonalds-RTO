@@ -1007,3 +1007,7 @@ button.prevButton:hover, button.nextButton:hover {
   transition: all 0.3s ease-in-out;
 }
 
+.blockedDates button:hover {
+  background-color: var(--danger-color-hover);
+}
+
