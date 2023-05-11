@@ -39,9 +39,6 @@ const SingleRequest = () => {
           {request.startDate}
         </blockquote>
       </div>
-
-      </div>
-
     </div>
   );
 };
