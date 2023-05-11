@@ -887,3 +887,10 @@ button.prevButton:hover, button.nextButton:hover {
   cursor: not-allowed;
 }
 
+.confirm-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
