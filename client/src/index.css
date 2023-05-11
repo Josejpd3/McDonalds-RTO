@@ -1112,3 +1112,15 @@ button.prevButton:hover, button.nextButton:hover {
   align-items: center;
 }
 
+.confirmation-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 20px;
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  width: 64px;
+  height: 64px;
+}
+
