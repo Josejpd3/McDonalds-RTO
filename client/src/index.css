@@ -1133,3 +1133,28 @@ button.prevButton:hover, button.nextButton:hover {
 
 
 
+/* Loading Spinner */
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid var(--background-dark-secondary); /* Light grey */
+  border-top: 10px solid var(--background-dark); /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
