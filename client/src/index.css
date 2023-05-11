@@ -791,3 +791,12 @@ button.deny-button:hover {
   margin: 0 auto;
 }
 
+.calendar {
+  position: relative;
+  width: 99%;
+  border: 1px solid var(--background-dark-secondary);
+  border-radius: 4px;
+  background-color: var(--background-light);
+  padding: 16px;
+}
+
