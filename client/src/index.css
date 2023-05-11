@@ -894,3 +894,7 @@ button.prevButton:hover, button.nextButton:hover {
   width: 100%;
 }
 
+.confirm-date {
+  text-align: center;
+}
+
