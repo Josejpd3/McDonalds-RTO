@@ -854,3 +854,10 @@ button.prevButton:hover, button.nextButton:hover {
   background-color: var(--background-light-secondary);
 }
 
+.calendar-day.blocked {
+  color: var(--blocked-color);
+  text-decoration-line: line-through;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
