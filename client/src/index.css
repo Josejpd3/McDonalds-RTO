@@ -1011,3 +1011,18 @@ button.prevButton:hover, button.nextButton:hover {
   background-color: var(--danger-color-hover);
 }
 
+@media screen and (max-width: 768px) {
+  .dateBlocker form input[type="date"] {
+      max-width: 15rem;
+    }
+
+  .dateBlockerModal .modal-content {
+    background-color: var(--background-light);
+    border-radius: 5px;
+    padding: 0px;
+    position: relative;
+    width: 90%;
+  }
+}
+
+
