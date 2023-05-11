@@ -861,3 +861,8 @@ button.prevButton:hover, button.nextButton:hover {
   cursor: not-allowed;
 }
 
+.calendar-day.selected {
+  background-color: var(--primary-dark-hover);
+  color: var(--background-light);
+}
+
