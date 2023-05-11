@@ -927,3 +927,12 @@ button.prevButton:hover, button.nextButton:hover {
   width: 100%;
 }
 
+.dateBlockerModal .modal-content {
+  background-color: var(--background-light);
+  border-radius: 5px;
+  padding: 0px;
+  position: relative;
+  width: 40%;
+  max-width: 350px;
+}
+
