@@ -946,3 +946,10 @@ button.prevButton:hover, button.nextButton:hover {
   padding: 2rem;
 }
 
+.dateBlocker form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
