@@ -964,3 +964,16 @@ button.prevButton:hover, button.nextButton:hover {
   font-size: 1.5rem;
 }
 
+.dateBlocker form button[type="submit"] {
+  width: 100%;
+  max-width: 20rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--background-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
