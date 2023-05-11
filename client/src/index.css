@@ -800,3 +800,11 @@ button.deny-button:hover {
   padding: 16px;
 }
 
+div.calendar-day.blocked.current-day {
+  text-decoration: solid;
+  text-decoration-line: underline;
+  text-decoration-color: var(--primary-dark-hover);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+
