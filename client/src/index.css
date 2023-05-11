@@ -1086,3 +1086,8 @@ button.prevButton:hover, button.nextButton:hover {
   border: 2px solid var(--primary-color);
 }
 
+.reset-password-error {
+  color: red;
+  margin-bottom: 10px;
+}
+
