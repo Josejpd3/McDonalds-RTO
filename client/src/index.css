@@ -1105,3 +1105,10 @@ button.prevButton:hover, button.nextButton:hover {
   background-color: var(--secondary-hover);
 }
 
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
