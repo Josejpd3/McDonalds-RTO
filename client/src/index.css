@@ -830,3 +830,9 @@ button.prevButton:hover, button.nextButton:hover {
   text-align: center;
 }
 
+.calendar-row {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
