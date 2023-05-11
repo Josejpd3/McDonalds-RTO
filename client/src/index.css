@@ -996,3 +996,14 @@ button.prevButton:hover, button.nextButton:hover {
   font-size: 1rem;
 }
 
+.blockedDates button {
+  padding: 0.5rem 1rem;
+  background-color: var(--danger-color);
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--background-light);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
