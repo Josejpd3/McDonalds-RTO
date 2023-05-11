@@ -38,7 +38,7 @@ function DateBlocker() {
           const timezoneOffset = dateObject.getTimezoneOffset() * 60 * 1000;
           const utcDate = dateObject.getTime() + timezoneOffset;
           const formattedDate = new Date(utcDate).toLocaleDateString('en-US');
-          const { data } = await blockDate({ variables: { date: formattedDate } });
+          await blockDate({ variables: { date: formattedDate } });
           setDate('');
         } catch (err) {
           console.error(err);
