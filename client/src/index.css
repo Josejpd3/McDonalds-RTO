@@ -1124,3 +1124,12 @@ button.prevButton:hover, button.nextButton:hover {
   height: 64px;
 }
 
+.confirmation-icon::before {
+  content: "\2713";
+  font-weight: 900;
+  font-size: 32px;
+}
+
+
+
+
