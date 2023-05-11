@@ -1071,3 +1071,13 @@ button.prevButton:hover, button.nextButton:hover {
   color: var(--primary-color);
 }
 
+.reset-password-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--background-light-secondary);
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
