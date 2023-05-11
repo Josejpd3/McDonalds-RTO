@@ -873,3 +873,8 @@ button.prevButton:hover, button.nextButton:hover {
   opacity: 1;
 }
 
+.confirm-request-button {
+  width: 50%;
+  margin: 10px;
+}
+
