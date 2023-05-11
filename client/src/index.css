@@ -815,3 +815,7 @@ div.calendar-day.blocked.current-day {
   margin-bottom: 16px;
 }
 
+button.prevButton:hover, button.nextButton:hover {
+  background-color: var(--primary-dark-hover);
+}
+
