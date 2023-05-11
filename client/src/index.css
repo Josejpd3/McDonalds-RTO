@@ -878,3 +878,7 @@ button.prevButton:hover, button.nextButton:hover {
   margin: 10px;
 }
 
+.confirm-request-button:hover {
+  background-color: var(--primary-dark-hover);
+}
+
