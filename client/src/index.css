@@ -882,3 +882,8 @@ button.prevButton:hover, button.nextButton:hover {
   background-color: var(--primary-dark-hover);
 }
 
+.confirm-request-button:disabled {
+  background-color: var(--blocked-color);
+  cursor: not-allowed;
+}
+
