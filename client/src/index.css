@@ -898,3 +898,7 @@ button.prevButton:hover, button.nextButton:hover {
   text-align: center;
 }
 
+.confirm-date.selected {
+  color: green;
+}
+
