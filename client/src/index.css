@@ -866,3 +866,10 @@ button.prevButton:hover, button.nextButton:hover {
   color: var(--background-light);
 }
 
+.calendar-day.in-range {
+  background-color: var(--range-color);
+  color: var(--primary-dark-hover);
+  border-radius: 10px;
+  opacity: 1;
+}
+
