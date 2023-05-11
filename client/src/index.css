@@ -913,3 +913,11 @@ button.prevButton:hover, button.nextButton:hover {
 
 }
 
+.first {
+  background-color: red;
+}
+
+.second {
+  background-color: green;
+}
+
