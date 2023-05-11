@@ -819,3 +819,14 @@ button.prevButton:hover, button.nextButton:hover {
   background-color: var(--primary-dark-hover);
 }
 
+.weekday-header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8px;
+}
+
+.weekday-header > * {
+  width: 52.28px;
+  text-align: center;
+}
+
