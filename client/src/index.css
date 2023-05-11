@@ -1081,3 +1081,8 @@ button.prevButton:hover, button.nextButton:hover {
   font-size: 16px;
   outline: none;
 }
+
+.reset-password-input:focus {
+  border: 2px solid var(--primary-color);
+}
+
