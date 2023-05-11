@@ -1,5 +1,6 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
+const compression = require('compression');
 const path = require('path');
 const { authMiddleware } = require('./utils/auth');
 
@@ -13,6 +14,8 @@ const server = new ApolloServer({
   resolvers,
   context: authMiddleware,
 });
+
+app.use(compression());
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
