@@ -1101,3 +1101,7 @@ button.prevButton:hover, button.nextButton:hover {
   transition: all 0.3s ease;
 }
 
+.reset-password-button:hover {
+  background-color: var(--secondary-hover);
+}
+
