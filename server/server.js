@@ -34,6 +34,14 @@ app.get('/', (req, res) => {
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
   server.applyMiddleware({ app });
+
+  app.use('/graphql', express.json(), (req, res) => {
+    graphqlHTTP({
+      schema: schema,
+      rootValue: root,
+      graphiql: true,
+    })(req, res);
+  });
   
   db.once('open', () => {
     app.listen(PORT, () => {
