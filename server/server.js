@@ -32,6 +32,15 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
+app.get('/signup', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+app.get('/resetpassword', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+app.get('/requests/:requestsId', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async (typeDefs, resolvers) => {
