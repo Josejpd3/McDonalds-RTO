@@ -921,3 +921,9 @@ button.prevButton:hover, button.nextButton:hover {
   background-color: green;
 }
 
+/* ********** */
+
+.dateBlockerModal {
+  width: 100%;
+}
+
