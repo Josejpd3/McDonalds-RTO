@@ -1091,3 +1091,13 @@ button.prevButton:hover, button.nextButton:hover {
   margin-bottom: 10px;
 }
 
+.reset-password-button {
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
