@@ -1038,3 +1038,15 @@ button.prevButton:hover, button.nextButton:hover {
   background-color: var(--background-light-secondary)DDD;
 }
 
+.go-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  scale: 2;
+  font-weight: 900;
+  rotate: 180deg;
+  color: var(--primary-color);
+}
+
