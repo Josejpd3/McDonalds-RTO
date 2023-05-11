@@ -767,3 +767,16 @@ button.deny-button:hover {
 .pending {color: grey;}
 .denied {color: red;}
 .approved {color: green;}
+
+
+
+
+/* DateRangePicker */
+
+.DateRangePickerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
