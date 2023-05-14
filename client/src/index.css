@@ -649,8 +649,19 @@ button:hover {
   text-align: center;
 }
 
+.textContainer {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-light-hover);
+  padding: 20px;
+  width:fit-content;
+  margin: 10px;
+  border-radius: 50px;
+}
 
 /* X--</>--X */
+
+
 
 
 /* Header.js */
