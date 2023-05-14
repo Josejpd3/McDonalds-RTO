@@ -630,6 +630,21 @@ button:hover {
 
 }
 
+/* X--</>--X */
+
+
+
+/* Single Request */
+
+.single-request-main {
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* X--</>--X */
 
