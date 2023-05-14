@@ -20,24 +20,16 @@ const SingleRequest = () => {
     return <div>Loading...</div>;
   }
   return (
-    <div className="main">
+    <div className="single-request-main">
+      <a className='go-back' href='/'>&#10132;</a>
       <h3>
         {request.requestAuthor} <br />
         <span style={{ fontSize: '1rem' }}>
-          had this request on {request.createdAt}
+          made this request on {request.createdAt}
         </span>
       </h3>
       <div className="textContainer">
-        <blockquote
-          style={{
-            fontSize: '1.5rem',
-            fontStyle: 'italic',
-            border: '2px dotted #1a1a1a',
-            lineHeight: '1.5',
-          }}
-        >
           {request.startDate}
-        </blockquote>
       </div>
     </div>
   );
