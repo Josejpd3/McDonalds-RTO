@@ -29,3 +29,8 @@ Deployment
 ----------
 
 This app is currently deployed on Heroku. No installation is required because the app is available online. To view the app, please go to [https://mcd-rto.com/](https://mcd-rto.com/).
+
+Credits
+-------
+
+This app was created by [Jose Plasencia](https://www.linkedin.com/in/jose-plasencia-50b387241/). If you have any questions or issues, please contact me.
