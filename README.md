@@ -11,3 +11,11 @@ Technologies Used
 -   Authentication: JSON Web Tokens (JWT)
 -   Deployment: Heroku
 
+Features
+--------
+
+-   Crew members can create and submit time off requests, view their own requests, and cancel requests before they are approved.
+-   Managers can view all time off requests, approve or deny requests, and block dates in advance.
+-   Authentication is required for all actions. Crew members and managers have different levels of access to the app.
+
+
