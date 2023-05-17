@@ -25,3 +25,7 @@ Features
 <img src="imgs/rto-create_request.png" alt= “” width="500px" height="500px">
 <img src="imgs/rto-blockdates.png" alt= “” width="500px" height="500px">
 
+Deployment
+----------
+
+This app is currently deployed on Heroku. No installation is required because the app is available online. To view the app, please go to [https://mcd-rto.com/](https://mcd-rto.com/).
