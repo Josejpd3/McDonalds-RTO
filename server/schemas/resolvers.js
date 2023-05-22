@@ -40,6 +40,8 @@ const resolvers = {
         { role },
         { new: true }
       );
+    
+      return updatedUser;
     },
     login: async (parent, { username, password }) => {
       const user = await User.findOne({ username });
