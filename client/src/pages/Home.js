@@ -83,7 +83,7 @@ const Home = () => {
     window.location.href = '/login';
   }
 
-  if(user.role === 'manager') {
+  if(user.role === 'admin') {
     return (
       <div className='HomeContainer'>
         <Header role={user.role}/>
