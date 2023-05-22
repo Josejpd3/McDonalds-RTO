@@ -35,7 +35,11 @@ const resolvers = {
       return { token, user };
     },
     updateUserRole: async (parent, { userId, role }) => {
-
+      const updatedUser = await User.findByIdAndUpdate(
+        userId,
+        { role },
+        { new: true }
+      );
     },
     login: async (parent, { username, password }) => {
       const user = await User.findOne({ username });
