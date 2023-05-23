@@ -13,4 +13,7 @@ const Search = () => {
     variables: { userId },
   });
 
+  // Query the current user
+  const { loading: currentUserLoading, data: currentUserData } = useQuery(QUERY_ME);
+
 };
