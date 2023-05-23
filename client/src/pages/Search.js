@@ -17,4 +17,5 @@ const Search = () => {
   const { loading: currentUserLoading, data: currentUserData } = useQuery(QUERY_ME);
 
   const users = usersData?.users || [];
+  const currentUser = currentUserData?.me || {};
 };
