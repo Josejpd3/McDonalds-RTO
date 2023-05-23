@@ -8,4 +8,9 @@ import { QUERY_USERS, QUERY_ME } from '../utils/queries';
 const Search = () => {
   const { userId } = useParams();
 
+  // Query the list of users
+  const { loading: usersLoading, data: usersData } = useQuery(QUERY_USERS, {
+    variables: { userId },
+  });
+
 };
