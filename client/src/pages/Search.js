@@ -23,4 +23,9 @@ const Search = () => {
     return <div>Loading...</div>;
   }
 
+  // Check if the current user has an admin role
+  if (currentUser.role !== 'admin') {
+    return <div>Access denied. Only admins can view this page.</div>;
+  }
+
 };
