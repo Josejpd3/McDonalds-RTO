@@ -18,4 +18,9 @@ const Search = () => {
 
   const users = usersData?.users || [];
   const currentUser = currentUserData?.me || {};
+
+  if (usersLoading || currentUserLoading) {
+    return <div>Loading...</div>;
+  }
+
 };
