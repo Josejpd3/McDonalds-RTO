@@ -6,5 +6,6 @@ import { useQuery } from '@apollo/client';
 import { QUERY_USERS, QUERY_ME } from '../utils/queries';
 
 const Search = () => {
+  const { userId } = useParams();
 
 };
