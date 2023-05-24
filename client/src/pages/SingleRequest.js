@@ -30,7 +30,7 @@ const SingleRequest = () => {
         </span>
       </h3>
       <div className="textContainer">
-          {request.startDate}
+          {request.startDate} - {request.endDate}
       </div>
     </div>
   );
