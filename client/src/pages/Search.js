@@ -31,7 +31,7 @@ const Search = () => {
 
   return (
     <div className="userListComponent">
-
+      <h3>User List</h3>
     </div>
   );
 };
