@@ -28,4 +28,10 @@ const Search = () => {
     return <div>Access denied. Only admins can view this page.</div>;
   }
 
+
+  return (
+    <div className="userListComponent">
+
+    </div>
+  );
 };
