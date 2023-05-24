@@ -44,6 +44,7 @@ const Search = () => {
                 <h4>{user.username}</h4>
               </Link>
               <p>{user.firstName} {user.lastName}</p>
+              <p>{user.role}</p>
             </div>
           ))}
         </div>
