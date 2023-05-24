@@ -25,7 +25,7 @@ const ResetPassword = () => {
 
   return (
     <div className="reset-password-container">
-      <a className='go-back' href='/login'>&#10132;</a>
+      <a className='go-back reset-password' href='/login'>&#10132;</a>
       {success ? (
         <div className="confirmation">
           <div className='confirmation-icon'></div>
