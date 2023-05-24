@@ -21,7 +21,7 @@ const Search = () => {
   const currentUser = currentUserData?.me || {};
 
   if (usersLoading || currentUserLoading) {
-    return <div>Loading...</div>;
+    return <LoadingSpinner/>;
   }
 
   // Check if the current user has an admin role
