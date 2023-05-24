@@ -38,7 +38,9 @@ const Search = () => {
         </div>
       ) : (
         <div className="userContainer">
+          {users.map((user) => (
 
+          ))}
         </div>
       )}
     </div>
