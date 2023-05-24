@@ -498,6 +498,18 @@ button:hover {
 .userDetailComponent .requestListComponent {
   min-width: 90%;
 }
+
+.userDetailComponent > p {
+  margin: 10px;
+  padding: 10px;
+  min-width: 200px;
+  border: 2px solid var(--primary-color);
+  border-radius: 40px;
+}
+
+
+/* X--</>--X */
+
 /* XXXXXXXXXXXXXXXXX */
 
 
