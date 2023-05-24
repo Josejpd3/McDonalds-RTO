@@ -28,10 +28,9 @@ const UserDetail = () => {
       <div className="userDetailComponent">
         <a className='go-back' href='/users'>&#10132;</a>
         <h2>User Detail</h2>
-        <p>Username: {user.username}</p>
-        <p>First Name: {user.firstName}</p>
-        <p>Last Name: {user.lastName}</p>
-        <p>Role: {user.role}</p>
+        <p>EID<br/>{user.username}</p>
+        <p>Name<br/>{user.firstName} {user.lastName}</p>
+        <p>Role<br/>{user.role}</p>
         <h3>Requests</h3>
         {user.requests && user.requests.length > 0 ? (
           <ul>
