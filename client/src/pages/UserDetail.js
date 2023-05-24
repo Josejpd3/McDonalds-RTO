@@ -23,5 +23,9 @@ const UserDetail = () => {
   }
 
     return (
+      <div className="userDetailComponent">
+
+      </div>
+    );
 };
 
