@@ -27,6 +27,7 @@ const UserDetail = () => {
         <h2>User Detail</h2>
         <p>Username: {user.username}</p>
         <p>First Name: {user.firstName}</p>
+        <p>Last Name: {user.lastName}</p>
       </div>
     );
 };
