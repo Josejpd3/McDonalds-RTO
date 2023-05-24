@@ -30,6 +30,20 @@ const UserDetail = () => {
         <p>Last Name: {user.lastName}</p>
         <p>Role: {user.role}</p>
         <h3>Requests</h3>
+        {user.requests && user.requests.length > 0 ? (
+          <ul>
+            {user.requests.map((request) => (
+              <li key={request._id}>
+                <p>Start Date: {request.startDate}</p>
+                <p>End Date: {request.endDate}</p>
+                <p>Request Status: {request.requestStatus}</p>
+                <p>Created At: {request.createdAt}</p>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>No requests made by this user.</p>
+        )}
       </div>
     );
 };
