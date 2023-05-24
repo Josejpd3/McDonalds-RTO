@@ -18,7 +18,7 @@ const SingleRequest = () => {
   const request = data?.request || {};
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <LoadingSpinner/>;
   }
   return (
     <div className="single-request-main">
