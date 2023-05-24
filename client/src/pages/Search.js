@@ -37,7 +37,9 @@ const Search = () => {
           <h3>No Users</h3>
         </div>
       ) : (
+        <div className="userContainer">
 
+        </div>
       )}
     </div>
   );
