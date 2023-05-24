@@ -26,6 +26,7 @@ const UserDetail = () => {
       <div className="userDetailComponent">
         <h2>User Detail</h2>
         <p>Username: {user.username}</p>
+        <p>First Name: {user.firstName}</p>
       </div>
     );
 };
