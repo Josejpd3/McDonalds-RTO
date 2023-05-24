@@ -32,6 +32,13 @@ const Search = () => {
   return (
     <div className="userListComponent">
       <h3>User List</h3>
+      {users.length === 0 ? (
+        <div>
+          <h3>No Users</h3>
+        </div>
+      ) : (
+
+      )}
     </div>
   );
 };
