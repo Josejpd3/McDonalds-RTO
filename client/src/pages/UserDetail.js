@@ -13,5 +13,8 @@ const UserDetail = () => {
   const currentUser = currentUserData?.data?.me || {};
   const user = userId ? data?.user : currentUser;
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 };
 
