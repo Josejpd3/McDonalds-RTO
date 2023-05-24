@@ -51,6 +51,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/resetpassword" element={<ResetPassword />} />
               <Route path="/requests/:requestId" element={<SingleRequest />} />
+              <Route path="/users" element={<Search />} />
             </Routes>
           </div>
         </div>
