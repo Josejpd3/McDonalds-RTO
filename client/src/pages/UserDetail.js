@@ -9,5 +9,6 @@ const UserDetail = () => {
     variables: { userId },
   });
 
+  const currentUserData = useQuery(QUERY_ME);
 };
 
