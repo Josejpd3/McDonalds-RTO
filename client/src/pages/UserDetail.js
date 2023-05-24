@@ -5,6 +5,9 @@ import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 const UserDetail = () => {
   const { userId } = useParams();
+  const { loading, data } = useQuery(userId ? QUERY_USER : QUERY_ME, {
+    variables: { userId },
+  });
 
 };
 
