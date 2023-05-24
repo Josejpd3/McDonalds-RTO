@@ -39,7 +39,12 @@ const Search = () => {
       ) : (
         <div className="userContainer">
           {users.map((user) => (
+            <div key={user._id} className="user">
+              <Link to={`/users/${user._id}`}>
+                <h4>{user.username}</h4>
+              </Link>
 
+            </div>
           ))}
         </div>
       )}
