@@ -13,6 +13,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import SingleRequest from "./pages/SingleRequest";
 import ResetPassword from './pages/ResetPassword';
+import Search from './pages/Search';
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
   uri: '/graphql',
