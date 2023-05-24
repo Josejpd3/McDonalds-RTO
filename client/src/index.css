@@ -486,6 +486,15 @@ button:hover {
 
 /* User Detail Page */
 
+.userDetailComponent {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* XXXXXXXXXXXXXXXXX */
 
 
