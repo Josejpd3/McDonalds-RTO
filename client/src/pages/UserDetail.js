@@ -26,6 +26,7 @@ const UserDetail = () => {
 
     return (
       <div className="userDetailComponent">
+        <a className='go-back' href='/users'>&#10132;</a>
         <h2>User Detail</h2>
         <p>Username: {user.username}</p>
         <p>First Name: {user.firstName}</p>
