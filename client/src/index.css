@@ -465,6 +465,10 @@ button:hover {
   align-items: center;
 }
 
+.userListComponent h3 {
+  margin-bottom: 15px;
+}
+
 /* XXXXXXXXXXXXXXXXX */
 
 
