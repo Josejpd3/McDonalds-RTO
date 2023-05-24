@@ -10,5 +10,6 @@ const UserDetail = () => {
   });
 
   const currentUserData = useQuery(QUERY_ME);
+  const currentUser = currentUserData?.data?.me || {};
 };
 
