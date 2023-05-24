@@ -16,5 +16,12 @@ const UserDetail = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
+
+  // Check if the user has an admin role
+  if (currentUser.role !== 'admin') {
+    return <div>Access denied. Only admins can view this page.</div>;
+  }
+
+    return (
 };
 
