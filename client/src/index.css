@@ -469,6 +469,13 @@ button:hover {
   margin-bottom: 15px;
 }
 
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* XXXXXXXXXXXXXXXXX */
 
 
