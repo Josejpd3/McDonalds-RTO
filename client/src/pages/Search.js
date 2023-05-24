@@ -43,7 +43,7 @@ const Search = () => {
               <Link to={`/users/${user._id}`}>
                 <h4>{user.username}</h4>
               </Link>
-
+              <p>{user.firstName} {user.lastName}</p>
             </div>
           ))}
         </div>
