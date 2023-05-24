@@ -16,7 +16,7 @@ const UserDetail = () => {
   const user = userId ? data?.user : currentUser;
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <LoadingSpinner/>;
   }
 
   // Check if the user has an admin role
