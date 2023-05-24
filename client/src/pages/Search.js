@@ -32,9 +32,11 @@ const Search = () => {
 
   return (
     <div className="userListComponent">
+      <a className='go-back' href='/'>&#10132;</a>
       <h3>User List</h3>
       {users.length === 0 ? (
         <div>
+          <a className='go-back' href='/'>&#10132;</a>
           <h3>No Users</h3>
         </div>
       ) : (
