@@ -44,6 +44,9 @@ app.get('/resetpassword', (req, res) => {
 app.get('/users', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
+app.get('/users/:userId', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 app.get('/requests/:requestsId', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
