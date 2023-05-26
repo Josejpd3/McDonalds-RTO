@@ -792,8 +792,11 @@ button:hover {
 
 .dateBlockContainer {
   display: flex;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .dateBlockContainer button {
