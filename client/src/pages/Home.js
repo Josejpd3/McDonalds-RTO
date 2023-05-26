@@ -89,6 +89,7 @@ const Home = () => {
       <div className='HomeContainer'>
         <Header role={user.role}/>
         <div className='buttonContainer dateBlockContainer'>
+          <a href='/users' className='users-link-button'><img src={usersIcon} alt='users'/></a>
           <button className='block-date-button' onClick={openModalBlockDates}>Block Dates</button>
           {showModalBlockDates && (
             <div className='modal dateBlockerModal'>
