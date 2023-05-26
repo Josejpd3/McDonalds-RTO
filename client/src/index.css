@@ -803,6 +803,14 @@ button:hover {
   margin-top: 10px;
 }
 
+.users-link-button {
+  background-color: var(--background-dark);
+  color: var(--background-light);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
 /* X--</>--X */
 
 /* Controller */
