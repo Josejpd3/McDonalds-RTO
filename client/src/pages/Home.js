@@ -13,6 +13,7 @@ import { QUERY_REQUESTS, QUERY_USER, QUERY_ME, } from '../utils/queries';
 import Auth from '../utils/auth';
 import DateBlocker from '../components/DateBlocker';
 import LoadingSpinner from '../components/LoadingSpinner';
+import usersIcon from '../imgs/users_icon.svg'
 
 
 const Home = () => {
