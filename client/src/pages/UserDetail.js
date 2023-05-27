@@ -18,6 +18,10 @@ const UserDetail = () => {
 
   const [showModal, setShowModal] = useState(false);
 
+  function openModal() {
+    setShowModal(true);
+  }
+
   if (loading) {
     return <LoadingSpinner/>;
   }
