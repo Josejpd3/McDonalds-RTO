@@ -550,6 +550,11 @@ button:hover {
 }
 
 
+.access-denied h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
 /* X--</>--X */
 
 /* XXXXXXXXXXXXXXXXX */
