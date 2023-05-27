@@ -338,7 +338,7 @@ button.control {
 }
 
 button:hover {
-  background: #66b3ff;
+  background: var(--primary-color);
 }
 
 .resetContainer {
