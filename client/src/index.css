@@ -507,6 +507,12 @@ button:hover {
   border-radius: 40px;
 }
 
+.role-edit-button:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--background-light);
+}
+
 
 /* X--</>--X */
 
