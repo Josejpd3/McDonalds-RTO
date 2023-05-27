@@ -7,6 +7,8 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
   const [updateUserRole, { loading, error }] = useMutation(UPDATE_USER_ROLE);
 
   const handleRoleChange = (event) => {
+    setSelectedRole(event.target.value);
+  };
 
   };
 };
