@@ -33,6 +33,10 @@ const Search = () => {
             </div>;
   }
 
+  const handleSearchInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
 
   return (
     <div className="userListComponent">
