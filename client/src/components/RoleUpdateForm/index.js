@@ -13,7 +13,12 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-
+      await updateUserRole({
+        variables: {
+          userId,
+          role: selectedRole,
+        },
+      });
       // Handle successful update, if needed
     } catch (error) {
       // Handle error, if needed
