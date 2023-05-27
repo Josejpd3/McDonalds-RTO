@@ -37,6 +37,10 @@ const Search = () => {
     setSearchTerm(event.target.value);
   };
 
+  const filteredUsers = users.filter((user) => {
+    const fullName = `${user.firstName} ${user.lastName}`.toLowerCase();
+    return fullName.includes(searchTerm.toLowerCase());
+  });
 
   return (
     <div className="userListComponent">
