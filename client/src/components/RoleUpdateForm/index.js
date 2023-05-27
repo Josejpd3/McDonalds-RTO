@@ -11,6 +11,7 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
   };
 
   const handleSubmit = async (event) => {
+    event.preventDefault();
 
   };
 };
