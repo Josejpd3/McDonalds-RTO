@@ -41,7 +41,7 @@ const UserDetail = () => {
         <h2>User Detail</h2>
         <p>EID<br/>{user.username}</p>
         <p>Name<br/>{user.firstName} {user.lastName}</p>
-        <p>Role<br/>{user.role}</p>
+        <p className='role-edit-button' onClick={openModal}>Role<br/>{user.role}</p>
         <h3>Requests</h3>
         <RequestList
           requests={user.requests}
