@@ -32,7 +32,10 @@ const UserDetail = () => {
 
   // Check if the user has an admin role
   if (currentUser.role !== 'admin') {
-    return <div>Access denied. Only admins can view this page.</div>;
+    return <div className='access-denied'>
+              <a className='go-back' href='/'>&#10132;</a>
+              <h3>Access Denied<br/> Only admins can view this page.</h3>
+          </div>;
   }
 
     return (
