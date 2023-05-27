@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import LoadingSpinner from '../components/LoadingSpinner';
 import RequestList from '../components/RequestList';
+import RoleUpdateForm from '../components/RoleUpdateForm';
 
 const UserDetail = () => {
   const { userId } = useParams();
