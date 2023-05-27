@@ -24,6 +24,16 @@ export const ADD_USER = gql`
   }
 `;
 
+export const UPDATE_USER_ROLE = gql`
+  mutation updateUserRole($userId: ID!, $role: String!) {
+    updateUserRole(userId: $userId, role: $role) {
+      _id
+      username
+      role
+    }
+  }
+`;
+
 export const RESET_PASSWORD = gql`
   mutation resetPassword($username: String!, $firstName: String!, $lastName: String!, $newPassword: String!) {
     resetPassword(username: $username, firstName: $firstName, lastName: $lastName, newPassword: $newPassword) {
