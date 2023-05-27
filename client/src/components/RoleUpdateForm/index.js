@@ -10,6 +10,8 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
     setSelectedRole(event.target.value);
   };
 
+  const handleSubmit = async (event) => {
+
   };
 };
 
