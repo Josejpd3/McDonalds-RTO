@@ -46,7 +46,9 @@ const UserDetail = () => {
             <div className='modal'>
               <div className='modal-content'>
                 <div className='roleForm'>
+                  <div className='formHeader'>
 
+                  </div>
                 </div>
               </div>
             </div>
