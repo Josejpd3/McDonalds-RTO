@@ -45,3 +45,4 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
   );
 };
 
+export default RoleUpdateForm;
