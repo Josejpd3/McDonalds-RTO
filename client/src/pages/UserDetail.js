@@ -16,6 +16,8 @@ const UserDetail = () => {
   const currentUser = currentUserData?.data?.me || {};
   const user = userId ? data?.user : currentUser;
 
+  const [showModal, setShowModal] = useState(false);
+
   if (loading) {
     return <LoadingSpinner/>;
   }
