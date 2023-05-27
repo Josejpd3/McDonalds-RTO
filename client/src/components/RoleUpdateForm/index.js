@@ -4,6 +4,7 @@ import { UPDATE_USER_ROLE } from '../../utils/mutations';
 
 const RoleUpdateForm = ({ userId, currentRole }) => {
   const [selectedRole, setSelectedRole] = useState(currentRole);
+  const [updateUserRole, { loading, error }] = useMutation(UPDATE_USER_ROLE);
 
 };
 
