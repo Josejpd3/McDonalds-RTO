@@ -38,6 +38,9 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
           <option value="admin">Admin</option>
         </select>
       </div>
+      <button type="submit" disabled={loading}>
+        Update Role
+      </button>
     </form>
   );
 };
