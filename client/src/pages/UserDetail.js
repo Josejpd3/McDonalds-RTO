@@ -42,6 +42,11 @@ const UserDetail = () => {
         <p>EID<br/>{user.username}</p>
         <p>Name<br/>{user.firstName} {user.lastName}</p>
         <p className='role-edit-button' onClick={openModal}>Role<br/>{user.role}</p>
+          {showModal && (
+            <div className='modal'>
+
+            </div>
+          )}
         <h3>Requests</h3>
         <RequestList
           requests={user.requests}
