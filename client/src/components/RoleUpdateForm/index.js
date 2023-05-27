@@ -27,7 +27,12 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
 
   return (
     <form onSubmit={handleSubmit}>
+      {error && <p>An error occurred. Please try again.</p>}
+      <div>
+        <h4>Current Role</h4>
+        <h5>{currentRole}</h5>
 
+      </div>
     </form>
   );
 };
