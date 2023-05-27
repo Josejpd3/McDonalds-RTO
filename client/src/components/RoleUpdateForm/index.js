@@ -31,7 +31,7 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
       <div>
         <h4>Current Role</h4>
         <h5>{currentRole}</h5>
-
+        <label htmlFor="role">Select Role:</label>
       </div>
     </form>
   );
