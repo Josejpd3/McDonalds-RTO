@@ -32,6 +32,11 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
         <h4>Current Role</h4>
         <h5>{currentRole}</h5>
         <label htmlFor="role">Select Role:</label>
+        <select id="role" value={selectedRole} onChange={handleRoleChange}>
+          <option value="crew">Crew</option>
+          <option value="manager">Manager</option>
+          <option value="admin">Admin</option>
+        </select>
       </div>
     </form>
   );
