@@ -52,6 +52,7 @@ const UserDetail = () => {
                       &times;
                     </span>
                   </div>
+                  <RoleUpdateForm userId={userId} currentRole={user.role}/>
                 </div>
               </div>
             </div>
