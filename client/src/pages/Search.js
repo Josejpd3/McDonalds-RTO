@@ -46,6 +46,12 @@ const Search = () => {
     <div className="userListComponent">
       <a className='go-back' href='/'>&#10132;</a>
       <h3>User List</h3>
+      <input
+      type="text"
+      placeholder="Search by name"
+      value={searchTerm}
+      onChange={handleSearchInputChange}
+      />
       {users.length === 0 ? (
         <div>
           <a className='go-back' href='/'>&#10132;</a>
