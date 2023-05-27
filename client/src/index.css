@@ -524,6 +524,10 @@ button:hover {
   align-items: center;
 }
 
+.roleForm form div {
+  margin: 20px;
+}
+
 
 /* X--</>--X */
 
