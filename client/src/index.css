@@ -536,6 +536,13 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.roleForm form button {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  width: 30%;
+  height: 40px;
+}
+
 
 /* X--</>--X */
 
