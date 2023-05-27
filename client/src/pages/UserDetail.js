@@ -22,6 +22,10 @@ const UserDetail = () => {
     setShowModal(true);
   }
 
+  function closeModal() {
+    setShowModal(false);
+  }
+
   if (loading) {
     return <LoadingSpinner/>;
   }
