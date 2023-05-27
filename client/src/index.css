@@ -518,6 +518,12 @@ button:hover {
   margin-top: 0px;
 }
 
+.roleForm form {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
 
 /* X--</>--X */
 
