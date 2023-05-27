@@ -24,5 +24,11 @@ const RoleUpdateForm = ({ userId, currentRole }) => {
       // Handle error, if needed
     }
   };
+
+  return (
+    <form onSubmit={handleSubmit}>
+
+    </form>
+  );
 };
 
