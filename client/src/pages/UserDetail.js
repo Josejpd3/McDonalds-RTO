@@ -48,6 +48,9 @@ const UserDetail = () => {
                 <div className='roleForm'>
                   <div className='formHeader'>
                     <h3>User Role</h3>
+                    <span className='close' onClick={closeModal}>
+                      &times;
+                    </span>
                   </div>
                 </div>
               </div>
