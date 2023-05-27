@@ -44,7 +44,11 @@ const UserDetail = () => {
         <p className='role-edit-button' onClick={openModal}>Role<br/>{user.role}</p>
           {showModal && (
             <div className='modal'>
+              <div className='modal-content'>
+                <div className='roleForm'>
 
+                </div>
+              </div>
             </div>
           )}
         <h3>Requests</h3>
