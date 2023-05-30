@@ -527,6 +527,12 @@ button:hover {
   text-align: center;
 }
 
+.userListComponent .user.no-users p {
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 }
 
 /* X--</>--X */
