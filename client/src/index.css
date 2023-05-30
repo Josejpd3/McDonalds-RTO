@@ -560,6 +560,11 @@ button:hover {
     color: var(--primary-color);
   }
 
+  .userListComponent input:focus {
+    border-color: var(--primary-dark-hover);
+    outline: none;
+  }
+
 
 }
 
