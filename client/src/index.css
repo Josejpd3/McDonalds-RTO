@@ -483,12 +483,10 @@ button:hover {
   text-align: center;
 }
 
-.userContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.userListComponent input::placeholder {
+  color: var(--primary-color);
 }
+
 
 .user {
   text-align: center;
