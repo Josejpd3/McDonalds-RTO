@@ -588,6 +588,9 @@ button:hover {
     text-align: center;
   }
 
+  .userListComponent .user.no-users {
+    padding: 12px 0;
+  }
 
 }
 
