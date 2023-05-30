@@ -510,9 +510,12 @@ button:hover {
   color: var(--primary-color);
 }
 
-.user {
+.userListComponent .user p {
+  font-size: 14px;
+  margin-bottom: 16px;
   text-align: center;
-  margin-bottom: 20px;
+}
+
 }
 
 /* X--</>--X */
