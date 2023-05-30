@@ -575,6 +575,13 @@ button:hover {
     text-align: center;
   }
 
+  .userListComponent .user h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
 
 }
 
