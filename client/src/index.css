@@ -565,6 +565,10 @@ button:hover {
     outline: none;
   }
 
+  .userListComponent .userContainer {
+    margin-top: 12px;
+  }
+
 
 }
 
