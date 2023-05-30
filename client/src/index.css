@@ -519,6 +519,14 @@ button:hover {
 .userListComponent .user.no-users {
   padding: 16px 0;
 }
+
+.userListComponent .user.no-users h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 }
 
 /* X--</>--X */
