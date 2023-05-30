@@ -516,6 +516,9 @@ button:hover {
   text-align: center;
 }
 
+.userListComponent .user.no-users {
+  padding: 16px 0;
+}
 }
 
 /* X--</>--X */
