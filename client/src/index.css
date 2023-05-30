@@ -496,6 +496,12 @@ button:hover {
   margin-top: 16px;
 }
 
+.userListComponent .user {
+  border-bottom: 1px solid var(--background-dark-secondary);
+  padding: 16px;
+  text-align: center;
+}
+
 
 .user {
   text-align: center;
