@@ -487,6 +487,11 @@ button:hover {
   color: var(--primary-color);
 }
 
+.userListComponent input:focus {
+  border-color: var(--secondary-hover);
+  outline: none;
+}
+
 
 .user {
   text-align: center;
