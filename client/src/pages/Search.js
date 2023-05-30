@@ -51,6 +51,15 @@ const Search = () => {
       placeholder="Search by name"
       value={searchTerm}
       onChange={handleSearchInputChange}
+      style={{
+        width: '50%',
+        border: '1px solid #0077cc',
+        background: '#ffffff',
+        color: '#0077cc',
+        fontWeight: 'bold',
+        outline: 'none',
+        zoom: 1,
+      }}
       />
       {users.length === 0 ? (
         <div>
