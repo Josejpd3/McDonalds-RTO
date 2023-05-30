@@ -556,6 +556,9 @@ button:hover {
     text-align: center;
   }
 
+  .userListComponent input::placeholder {
+    color: var(--primary-color);
+  }
 
 
 }
