@@ -569,6 +569,12 @@ button:hover {
     margin-top: 12px;
   }
 
+  .userListComponent .user {
+    border-bottom: 1px solid var(--background-dark-secondary);
+    padding: 12px;
+    text-align: center;
+  }
+
 
 }
 
