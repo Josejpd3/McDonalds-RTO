@@ -538,6 +538,13 @@ button:hover {
     width: 100%;
   }
 
+  .userListComponent h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
 
 
 }
