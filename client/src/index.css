@@ -463,6 +463,12 @@ button:hover {
   text-align: center;
 }
 
+.userListComponent h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .userListComponent input {
