@@ -14,8 +14,9 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const lowercaseUsername = username.toLowerCase();
       await resetPassword({
-        variables: { username, firstName, lastName, newPassword },
+        variables: { username: lowercaseUsername, firstName, lastName, newPassword },
       });
       setSuccess(true);
     } catch (err) {
