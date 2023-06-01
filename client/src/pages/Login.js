@@ -23,15 +23,18 @@ const Login = (props) => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     try {
+      const { username, password } = formState;
+      const lowercaseUsername = username.toLowerCase();
+  
       const { data } = await login({
-        variables: { ...formState },
+        variables: { username: lowercaseUsername, password },
       });
-
+  
       Auth.login(data.login.token);
     } catch (e) {
       console.error(e);
     }
-
+  
     // clear form values
     setFormState({
       username: '',
