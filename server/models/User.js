@@ -44,6 +44,10 @@ userSchema.pre('save', async function (next) {
     this.password = await bcrypt.hash(this.password, saltRounds);
   }
 
+  if (this.isNew || this.isModified('username')) {
+    this.username = this.username.toLowerCase();
+  }
+
   next();
 });
 
